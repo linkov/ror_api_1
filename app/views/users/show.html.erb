@@ -1,0 +1,23 @@
+<!--<aside class="col-md-4">-->
+  <!--<h4><%= @user.name %> <%= @user.surname %></h4>-->
+  <!--<%= image_tag @user.picture_url(:thumb) if @user.picture? %>-->
+<!--</aside>-->
+
+<div class="row">
+
+    <div class="col-md-12 text-center">
+    <%= link_to 'Upload new content', works_path, :class => "btn btn-primary" %>
+      </div>
+
+</div>
+
+
+<div class="col-md-12">
+  <% if @user.works.any? %>
+      <h3>Your content</h3>
+      <ol class="works">
+        <%= render @works %>
+      </ol>
+      <%= will_paginate @works %>
+  <% end %>
+</div>

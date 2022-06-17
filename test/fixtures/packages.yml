@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+classic:
+  price: 0.0
+  title: classic
+  code: classic
+  description: classic pack desc
+
+
+purchasable:
+  price: 9.99
+  title: snoop dogg plazzenet earth
+  code: snoop
+  description: snop dog pack desc

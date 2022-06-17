@@ -1,0 +1,27 @@
+<!doctype html>
+<html dir="ltr" lang="<%= I18n.locale %>">
+<head>
+  <meta charset="UTF-8">
+  <title>8feedback</title>
+  <base href="/frontend/">
+  <%= stylesheet_link_tag 'frontend' %>
+  <%= include_ember_script_tags :frontend %>
+  <%= javascript_include_tag 'frontend', 'data-turbolinks-track' => false %>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Sets initial viewport load and disables zooming  -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <%= csrf_meta_tags %>
+
+
+</head>
+
+<body>
+<%= yield %>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div id="<%= question.id %>" class="question-container">
+  <div class="question-title">
+    <p><%= question.title %></p>
+  </div>
+
+  <div class="question-actions">
+
+    <div class="question-action action-translations">
+      <p>translations</p>
+    </div>
+
+    <% if question.slider_type.code == "emo" || question.slider_type.code == "normal" %>
+    <div class="question-action action-slider">
+      <p>slider</p>
+    </div>
+    <% end %>
+
+    <% if question.slider_type.code == "choosomatic" %>
+    <div class="question-action action-suggestions">
+      <p>suggestions</p>
+    </div>
+    <% end %>
+
+  </div>
+</div>
+<div class="question-actions-container">
+
+<% if question.slider_type.code == "choosomatic" %>
+  <div class="suggestions-action-container">
+    <%= render "suggestions_partial", question: question %>
+  </div>
+<% end %>
+
+ <div class="translations-action-container">
+   <%= render "translations_partial", question: question %>
+ </div>
+
+<% if question.slider_type.code == "emo" || question.slider_type.code == "normal" %>
+ <div class="slider-action-container">
+   <%= render "slider_partial", question: question %>
+ </div>
+<% end %>
+
+
+</div>

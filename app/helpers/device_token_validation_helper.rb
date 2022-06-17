@@ -1,0 +1,2 @@
+module DeviceTokenValidationHelper
+end

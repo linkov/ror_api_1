@@ -1,0 +1,153 @@
+
+.project-presentation-container {
+
+
+  @include breakpoint(small) {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+}
+
+.efw-mb-presentation-container {
+
+  padding-left: 22px;
+  padding-right: 22px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .efw-mb-presentation-work-slider-container {
+    height: 160px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 22px;
+
+    .efw-rate-question {
+      h1 {
+        font-family: 'Walsheim Regular', sans-serif;
+        font-size: 14px;
+      }
+    }
+
+
+  }
+
+  .efw-mb-presentation-header {
+
+    height: 80px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+
+    .efw-mb-presentation-work-title {
+      height: 50%;
+      padding-top: 13px;
+      width: 160px;
+
+      h1 {
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 22px;
+      }
+
+
+
+    }
+
+    .efw-mb-presentation-work-description {
+      height: 50%;
+
+      p {
+        padding-top: 3px;
+        font-family: 'Walsheim Regular', sans-serif;
+        font-size: 14px;
+        color: #6B6B6B;
+      }
+    }
+  }
+
+
+  .efw-mb-presentation-work-image {
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    // -webkit-transition: height 0.3s;
+    // -moz-transition: height 0.3s;
+    // -ms-transition: height 0.3s;
+    // -o-transition: height 0.3s;
+    // transition: height 0.3s;
+    //
+    // -webkit-transition: width 0.3s;
+    // -moz-transition: width 0.3s;
+    // -ms-transition: width 0.3s;
+    // -o-transition: width 0.3s;
+    // transition: width 0.3s;
+
+  }
+
+  .efw-mb-presentation-work-footer-expanded {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 54px;
+    margin: 0 auto;
+
+    .efw-mb-presentation-action-button-expanded {
+      height: 39px;
+      width: 100%;
+
+      .efw-mb-presentation-tutorial-link {
+        float: left;
+        text-align: left;
+        border: none;
+        background: transparent;
+
+        h2 {
+          font-family: 'Walsheim Medium', sans-serif;
+          font-size: 14px;
+        }
+
+        p {
+          font-family: 'Walsheim Medium', sans-serif;
+          padding-top: 5px;
+          font-size: 10px;
+        }
+      }
+
+      button {
+        float: right;
+      }
+
+    }
+  }
+
+  .efw-mb-presentation-work-footer {
+    height: 54px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    .efw-mb-presentation-action-button {
+      margin: 0 auto;
+      height: 39px;
+      width: 130px;
+
+    }
+
+
+
+
+    width: 100%;
+
+  }
+
+}

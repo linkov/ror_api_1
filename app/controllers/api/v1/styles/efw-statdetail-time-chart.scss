@@ -1,0 +1,32 @@
+.efw-statdetail-time-chart {
+  #time-chart {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    @include breakpoint(tiny) {
+      left: -16px;
+    }
+  }
+
+  .ui-element {
+
+    p {
+      color: #808080;
+      font-family: 'Walsheim Medium', sans-serif;
+      font-size: 9px;
+    }
+
+    position: absolute;
+  }
+
+  .rating-title {
+    top: 20px;
+    left: 30px;
+  }
+
+  .rating-subtitle {
+    bottom: 2px;
+    right: 0;
+  }
+}

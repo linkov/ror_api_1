@@ -1,0 +1,97 @@
+.efw-choosomatic {
+
+  .efw-rate-question {
+      margin-bottom: 20px;
+  }
+
+  .inner-container {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: 'Walsheim Bold', sans-serif;
+    font-size: 18px;
+  }
+
+
+
+  .yes-col {
+    float: left;
+    margin-right: 10px;
+    border: none;
+    box-shadow: none;
+    border-radius: 18px;
+    background: #EEEEEE;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    margin-top: 4px;
+
+    .yes-button {
+      background: transparent;
+    }
+  }
+
+  .yes-col-active {
+
+    background: $efw-color-accent;
+    h1 {
+      color:white;
+    }
+  }
+
+  .variants-col {
+    float: right;
+    width: 270px;
+    background: #EEEEEE;
+    padding: 10px;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    h1 {
+      float: left;
+      margin-top: 2px;
+    }
+
+
+
+    .variants-list {
+      width: 200px;
+      float: left;
+      @include breakpoint(tiny) {
+        overflow: scroll;
+        height: 62px;
+      }
+
+      .variant-group-item {
+        float: left;
+        clear: both;
+        cursor: pointer;
+
+
+        p {
+          padding: 4px;
+          border-radius: 16px;
+          padding-left: 10px;
+          padding-right: 10px;
+          color:black;
+          background-color: transparent;
+          font-family: 'Walsheim Regular', sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .active {
+        p {
+          background-color: $efw-color-accent;
+          color:white;
+        }
+
+      }
+    }
+  }
+}

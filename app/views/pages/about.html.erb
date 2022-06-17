@@ -1,0 +1,49 @@
+
+<script>
+
+
+  $(function() {
+
+    html2canvas(document.getElementById("slide"), {
+      onrendered: function(canvas) {
+
+        console.log(canvas.width);
+
+        var i;
+
+//        for (i = 0; i <= canvas.width; i++) {
+//          var pixelData = canvas.getContext('2d').getImageData(i, 0, 1, 1).data;
+//          console.log('rateColor'+i+' = RateColor.create(rating:'+i+',red:'+pixelData[0]+',green:'+pixelData[1]+',blue:'+pixelData[2]+')');
+//        }
+
+
+      }
+    });
+
+
+  });
+
+
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+  <h3>About us</h3>
+
+
+
+</div>
+<div id="slide" style="height: 1px !important;"  class="rating-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="8" name="rating[8]">
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-left">
+    <h5>Artsy fartsy 2.0</h5>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Test
+    </p>
+  </div>
+</div>
+
+

@@ -1,0 +1,23 @@
+.efw-application {
+
+
+  padding-top: 100px;
+  @include breakpoint(small) {
+      padding-top: 60px;
+  }
+
+  overflow: hidden;
+  .mdl-grid {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+
+  }
+
+  .mdl-cell--top, .mdl-cell--middle, .mdl-cell--bottom {
+
+    width: 100%;
+  }
+
+
+}

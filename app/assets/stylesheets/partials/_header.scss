@@ -1,0 +1,37 @@
+
+.main-logo {
+
+  width:20px;
+  height: 15px;
+}
+
+.infinity-logo {
+
+  width:20px;
+  height: 15px;
+  float: right;
+  background: transparent image-url("infinity_header_2x.png") no-repeat center center;
+  display: none;
+
+}
+
+.navbar-header {
+  float: none;
+}
+
+#header-updates {
+  float: right;
+  color: white;
+  display: none;
+}
+
+.header-notice {
+  display: none;
+}
+
+
+
+.page-header {
+  margin: 0px;
+  border-bottom: none;
+}

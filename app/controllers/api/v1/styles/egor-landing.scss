@@ -1,0 +1,471 @@
+.egor-landing {
+
+
+  h2 {
+    font-size: 21pt;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 12px;
+    text-transform: none;
+
+  }
+
+
+  .intro-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 34px;
+    font-size: 19px;
+  }
+
+  button {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto !important;
+  }
+
+
+  //margin-top: 50px;
+  //overflow-y: scroll;
+  //
+
+
+  .onboard-page-one {
+    width:100%;
+    position: relative;
+
+
+    background-image: url("frontend/images/site_d.png");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 321px;
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+
+      @include breakpoint(medium) {
+        height: 200px;
+      }
+
+
+      @include breakpoint(small) {
+        height: 250px;
+      }
+
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+    .secord-video {
+      margin: 0 auto;
+      width: 100%;
+      height: 640px;
+      margin-top: 5700px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+
+      .vimeoXtra {display:block; width: 100%; height:920px; margin:0 auto;margin-top: -128px;}
+    }
+
+    .background-video {
+      margin: 0 auto;
+      width: 100%;
+      height: 640px;
+      margin-top: 1563px;
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+
+      .vimeoXtra {display:block; width: 100%; height:920px; margin:0 auto;margin-top: -128px;}
+
+
+      h2 {
+
+        position: absolute;
+        left: 0;
+        color: white;
+        right: 0;
+        margin: 0 auto;
+        font-size: 34pt;
+        top: 144px;
+        font-family: 'Walsheim Bold', sans-serif;
+
+      }
+
+      .left-text {
+        position: absolute;
+        top: 260px;
+        left: 193px;
+        font-size: 14pt;
+        color: white;
+        width: 417px;
+        line-height: 28px;
+        font-family: 'Walsheim Regular', sans-serif;
+        letter-spacing: 0.08em;
+        text-align: justify;
+      }
+
+      .right-text {
+        font-family: 'Walsheim Regular', sans-serif;
+        letter-spacing: 0.08em;
+        position: absolute;
+        top: 260px;
+        left: 675px;
+        font-size: 14pt;
+        color: white;
+        width: 413px;
+        line-height: 28px;
+        text-align: justify;
+      }
+
+    }
+
+
+    .main-video {
+      margin: 0 auto;
+      width: 100%;
+      height: 640px;
+      margin-top: 472px;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+
+      .vimeoXtra {display:block; width: 100%; height:920px; margin:0 auto;margin-top: -128px;}
+
+
+
+      .icon {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto auto;
+        font-size: 100pt;
+        z-index: 10;
+        cursor: pointer;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 150px;
+        background: darkgrey;
+        border-radius: 75px;
+
+      }
+
+      .video-js {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .onboard-page-two {
+
+
+    #gradient-bg {
+      width:100%;
+      height:100%;
+      background-image: url("frontend/images/gradient_g.svg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width:100%;
+
+    }
+
+    width:100%;
+
+    .white-overlay {
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 83%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 83%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+      height: 100%;
+      width: 100%;
+      opacity:0.0;
+      position: relative;
+
+      .landing-slider-container {
+        position: absolute;
+        bottom: 0;
+        height: 340px;
+
+        width: 400px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+
+
+
+        #slider {
+
+          #slider-emoji {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            bottom: 46px;
+          }
+
+          #emo-slider-words-container {
+            bottom: 135px;
+
+
+            h2 {
+              font-size: 21px;
+              padding: 5px;
+
+              min-width: 120px;
+            }
+          }
+
+          height: 40px;
+          margin-top: 60px;
+          padding:20px;
+          position: relative;
+
+          #slider-handle {
+            position: absolute;
+            top: 40px;
+            left: 23px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: black;
+          }
+
+
+          #slider-line {
+            margin-top: 28px;
+            background-color: black;
+            height:4px;
+
+          }
+        }
+
+
+      }
+    }
+
+
+
+  }
+  .onboard-page-three {
+    background: white;
+
+    width:100%;
+
+    position: relative;
+
+
+    .header-title {
+      font-size: 42pt;
+      padding-top: 156px;
+      opacity:0.0;
+    }
+
+    table {
+      opacity:0.0;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+
+      td {
+        padding: 16px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    }
+
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+  }
+
+
+  .onboard-page-four {
+    background: black;
+    width:100%;
+
+    position: relative;
+
+
+    .header-title {
+      font-size: 42pt;
+      padding-top: 156px;
+      opacity:0.0;
+      color:white;
+    }
+
+    table {
+      opacity:0.0;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+
+      h2 {
+        text-align: center;
+        color: white;
+      }
+
+      td {
+        padding: 16px;
+      }
+
+      .bottom-text {
+
+        line-height: 36px;
+        text-align: left;
+      }
+
+      .top-text {
+        color:black;
+        font-size: 37pt;
+        line-height: 82px;
+        background: white;
+        border-radius: 40px;
+        height: 80px;
+        width: 80px;
+      }
+
+      .arrow {
+        font-size: 59px;
+      }
+
+
+    }
+
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+  }
+}
+
+
+///
+
+.landing-first-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 857px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 400px auto;
+
+  .landing-title {
+    color: white;
+    font-size: 32pt;
+  }
+
+  span {
+    font-family: 'Walsheim Medium', sans-serif !important;;
+    font-size: 20pt !important;;
+    vertical-align: text-bottom;
+    position: absolute;
+    margin-left: 4px;
+    margin-top: -7px;
+
+  }
+
+  h3 {
+    font-family: 'Walsheim Medium', sans-serif !important;;
+    font-size: 12pt !important;;
+    width: 515px;
+    margin: 0 auto !important;
+    padding-top: 19px !important;
+  }
+
+
+
+}
+
+#rating {
+
+  .text-container {
+    width: 864px;
+    margin: 0 auto;
+    padding: 556px 0px 0px 0px;
+
+    h2 {
+
+      font-family: 'Walsheim Regular', sans-serif;
+      font-size: 20pt;
+      color: black;
+      padding:0;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: none;
+      line-height: 43px;
+    }
+
+    h1 {
+
+      font-family: 'Walsheim Bold', sans-serif;
+      font-size: 54pt;
+      color: black;
+      padding:0;
+      margin: 0;
+      font-weight: 800;
+      line-height: 132px;
+      letter-spacing: 0.03em;
+      text-transform: none;
+
+    }
+
+    h3 {
+      font-family: 'Walsheim Regular', sans-serif;
+      font-size: 10pt;
+      color: black;
+      padding:0;
+      margin: 0;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+}

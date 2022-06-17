@@ -1,0 +1,398 @@
+.efw-header {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+
+  background: transparent;
+  overflow: hidden;
+}
+
+.efw-landing {
+
+  .fill-class-2 {
+    stroke: #3284C3;
+    fill: white;
+    stroke-width: 6
+  }
+
+  .stroke-class {
+    stroke: #3284C3;
+    stroke-width: 6
+  }
+
+  .fill-class-1 {
+    fill:  #3284C3;
+  }
+
+  .main-shape {
+    stroke-width: 6
+  }
+
+
+  h2 {
+    font-size: 21pt;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 12px;
+
+  }
+
+  .intro-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 34px;
+    font-size: 19px;
+  }
+
+  button {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 134px;
+    margin: 0 auto !important;
+  }
+
+
+  //margin-top: 50px;
+  //overflow-y: scroll;
+  //
+
+
+  .onboard-page-one {
+    width:100%;
+    position: relative;
+    background-color: white;
+
+    .intro-title {
+      background-color: white;
+    }
+
+    // background: rgb(233,233,234);
+    // background: -moz-linear-gradient(top, rgba(233,233,234,1) 0%, rgba(197,198,200,1) 100%);
+    // background: -webkit-linear-gradient(top, rgba(233,233,234,1) 0%,rgba(197,198,200,1) 100%);
+    // background: linear-gradient(to bottom, rgba(233,233,234,1) 0%,rgba(197,198,200,1) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#c5c6c8',GradientType=0 );
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+
+      @include breakpoint(medium) {
+        height: 200px;
+      }
+
+
+      @include breakpoint(small) {
+        height: 250px;
+      }
+
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+
+
+    }
+
+
+    .main-video {
+      margin: 0 auto;
+      width: 750px;
+      height: 420px;
+      margin-top: 100px;
+      @include breakpoint(medium) {
+        width: 550px;
+        height: 304px;
+
+        margin-top: 140px;
+      }
+
+
+      @include breakpoint(small) {
+        width: 300px;
+        height: 168px;
+        margin-top: 200px;
+      }
+
+      @include breakpoint(tiny) {
+        margin-top: 130px;
+      }
+
+
+
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      background: green;
+
+      svg {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto auto;
+        font-size: 100pt;
+        z-index: 10;
+        cursor: pointer;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 150px;
+        background: transparent;
+        border-radius: 75px;
+
+      }
+
+      .video-js {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .onboard-page-two {
+    background: url('https://efwfileupload.s3-accelerate.amazonaws.com/ip-background-2-v2.png') no-repeat transparent;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    background-color: #0095e6;
+
+    .white-overlay {
+      background: -moz-linear-gradient(top, rgba(0,149,230,0) 0%, rgba(0,149,230,1) 83%, rgba(0,149,230,1) 100%);
+      background: -webkit-linear-gradient(top, rgba(20,149,230,0) 0%,rgba(0,149,230,1) 83%,rgba(0,149,230,1) 100%);
+      background: linear-gradient(to bottom, rgba(0,149,230,0) 0%,rgba(0,149,230,1) 83%,rgba(0,149,230,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+      height: 100%;
+      width: 100%;
+      opacity:0.0;
+      position: relative;
+
+      .landing-slider-container {
+        position: absolute;
+        bottom: 0;
+
+        height: 255px;
+
+        width: 400px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+
+        h1, h2 {
+          color: white;
+        }
+
+
+        #slider {
+
+
+          #slider-emoji {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            bottom: 46px;
+          }
+
+          #emo-slider-words-container {
+            bottom: 135px;
+
+            h2 {
+              color:#3284C3;
+              border: 2px solid #3284C3;
+            }
+
+            h2 {
+              font-size: 21px;
+              padding: 5px;
+              min-width: 120px;
+            }
+          }
+
+          height: 40px;
+          margin-top: 60px;
+          padding:20px;
+          position: relative;
+
+          #slider-handle {
+            position: absolute;
+            //top: 40px;
+            top: 0px;
+            left: 23px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: white;
+          }
+
+
+          #slider-line {
+            //margin-top: 28px;
+            margin-top: -13px;
+            background-color: white;
+            height:4px;
+
+          }
+        }
+
+
+      }
+    }
+
+
+
+  }
+  .onboard-page-three {
+    background: url('https://efwfileupload.s3-accelerate.amazonaws.com/ip-background-3.jpg') no-repeat transparent;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+
+    position: relative;
+
+
+    .header-title {
+      padding-top: 156px;
+      opacity:0.0;
+      font-family: "Walsheim Bold";
+      font-size: 30px;
+      color: white;
+    }
+
+    table {
+      opacity:0.0;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border-spacing: 3em;
+      border-collapse: separate;
+
+      .category-type-image {
+        width: 40px;
+        height: 40px;
+      }
+
+      td {
+        padding: 16px;
+      }
+
+      h2 {
+        font-size: 22px;
+        text-align: left;
+        color: white;
+      }
+    }
+
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+
+
+      .efw-big-button {
+        background: white;
+        color: black;
+      }
+    }
+
+  }
+
+
+  .onboard-page-four {
+    background: url('https://efwfileupload.s3-accelerate.amazonaws.com/ip-background-4.jpg') no-repeat transparent;
+    background-position: center center;
+    position: relative;
+    width:100%;
+    background-size: cover;
+    position: relative;
+
+    .landing-bottom-container {
+      h2 {
+        font-size: 19px;
+        font-family: "Walsheim Medium";
+        text-transform: none;
+      }
+    }
+
+    .header-title {
+      font-size: 42pt;
+      padding-top: 156px;
+      opacity:0.0;
+      color: white;
+    }
+
+    table {
+      opacity:0.0;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+
+      h2 {
+        text-align: center;
+        color: white;
+      }
+
+      td {
+        padding: 16px;
+      }
+
+      .bottom-text {
+
+        line-height: 36px;
+        text-align: left;
+      }
+
+      .top-text {
+        color:white;
+        font-size: 37pt;
+        line-height: 75px;
+        background: transparent;
+        border-radius: 40px;
+        border-width: 2px;
+        border: 2px solid white;
+        height: 80px;
+        width: 80px;
+      }
+
+      .arrow {
+        font-size: 59px;
+      }
+
+
+    }
+
+
+    .landing-bottom-container {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+
+      .efw-big-button {
+        background: white;
+        color: black;
+      }
+      h2 {
+        color:white !important;
+      }
+    }
+
+  }
+}

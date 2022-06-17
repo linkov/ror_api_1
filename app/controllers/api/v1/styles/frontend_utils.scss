@@ -1,0 +1,168 @@
+@mixin breakpoint($point) {
+  @if $point == xlarge {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+  @if $point == large {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+  @else if $point == mediumplus {
+    @media (max-width: 1230px) {
+      @content;
+    }
+  }
+  @else if $point == medium {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $point == smallplus {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $point == small {
+    @media (max-width: 660px) {
+      @content;
+    }
+  }
+  @else if $point == tiny {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+  @else if $point == supertiny {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+  @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+
+.efw-bordered-big {
+
+  border: 3px solid black !important;
+  border-radius: 22px;
+  height: 39px;
+  width: 130px;
+  background-color: white;
+
+  @include breakpoint(supertiny) {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+    color:black;
+    font-size: 24px;
+    letter-spacing: 0.08em;
+
+  }
+}
+
+
+.efw-bordered-big-armed {
+  background-color: black;
+   h1 {
+     color: white;
+   }
+}
+
+.efw-bordered  {
+  border: 3px solid black !important;
+  border-radius: 22px;
+  height: 30px;
+  background-color: white;
+
+  h1 {
+    color: black;
+    font-size: 14px;
+    font-family: "Walsheim Regular";
+  }
+}
+
+.armed {
+  background-color: black;
+   h1 {
+     color: white;
+   }
+}
+
+
+/* ==========  Select Field Variables ========== */
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$select-padding: 4px;
+
+/* ==========  Select Field ========== */
+
+/* Style Select Field */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: $select-padding 0;
+  font-size: $select-font-size;
+  color: $select-color;
+  border: none;
+  border-bottom: 1px solid $select-border-color;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none}
+
+/* Hide label */
+.mdl-selectfield label {display: none;}
+/* Use custom arrow */
+.mdl-selectfield select {appearance: none}
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0.75em;
+    right: 0.5em;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: .25em solid transparent;
+    border-right: .25em solid transparent;
+    border-top: .375em solid $select-border-color;
+    pointer-events: none;
+  }
+}
+
+
+
+/* UI */
+
+.efw-round-icon-30 {
+
+  width:30px;
+  height:30px;
+  border-radius: 15px;
+  border: 1px solid lightgray !important;
+  text-align: center;
+
+  .icon {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.0em;
+    margin-top: 5px;
+    color: lightgray;
+  }
+}

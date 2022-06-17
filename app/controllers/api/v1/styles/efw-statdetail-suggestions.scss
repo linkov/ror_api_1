@@ -1,0 +1,96 @@
+.efw-statdetail-suggestions {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  .pie-chart {
+    float: left;
+
+  }
+
+  .pie-legend {
+    float: left;
+    margin-top: 4px;
+
+    .info-row {
+      width: 145px;
+      clear: both;
+      margin-bottom: 8px;
+      position: inherit;;
+
+      .circle-col {
+        width: 12px;
+        float: left;
+        margin-right: 8px;
+
+        svg {
+          circle {
+            // fill: transparent;
+            // stroke:black;
+            // stroke-width:2px;
+          }
+        }
+      }
+      .title-col {
+        float: left;
+        margin-right: 10px;
+        font-family: 'Walsheim Regular', sans-serif;
+        font-size: 11px;
+        padding-top: 2px;
+      }
+
+      .main-title {
+        font-family: 'Walsheim Bold', sans-serif;
+        font-size: 12px;
+        padding-top: 1px;
+      }
+
+      .sub-title {
+        float: right;
+        font-size: 9px;
+        padding-top: 4px;
+        font-family: 'Walsheim Medium', sans-serif;
+        color: #808080;
+
+      }
+      .percent-col {
+        float: left;
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 11px;
+        padding-top: 3px;
+      }
+
+      .positive-row {
+        stroke:white;
+      }
+      .neutral-row {
+        stroke:#B1B1B1;
+      }
+      .negative-row {
+        stroke:black;
+      }
+    }
+  }
+  .suggestions-list {
+    // transition: margin 0.4s, opacity 0.4s;
+    margin-top: -38px;
+    margin-left: 30px;
+    opacity: 1.0;
+
+    @include breakpoint(tiny) {
+        margin-top:0;
+    }
+
+    .info-row {
+          width: 255px;
+    }
+  }
+
+  .is-shown-vertical {
+
+   margin-top: 20px;
+   opacity: 1.0;
+ }
+}

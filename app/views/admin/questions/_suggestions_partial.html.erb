@@ -1,0 +1,31 @@
+<table class="table">
+		<caption>
+			Suggestions
+		</caption>
+		<thead>
+			<tr>
+				<th>copy</th>
+				<th>negative impact</th>
+				<th>En</th>
+				<th>De</th>
+        <th>delete</th>
+			</tr>
+		</thead>
+		<tbody>
+
+<% question.suggestions.each do |suggestion| %>
+  <tr id="<%= suggestion.id %>">
+    <td>copy</td>
+    <td><%= best_in_place suggestion, :negative_impact, :as => :input, url: [:admin,question] %></td>
+    <td><%= best_in_place suggestion, :title_en, :as => :input, url: [:admin,question] %></td>
+    <td><%= best_in_place suggestion, :title_de, :as => :input, url: [:admin,question] %></td>
+    <td><%= link_to 'Destroy', admin_suggestion_path(suggestion), 'data-type' => 'json', class: "suggestion_delete remote_delete", method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td>
+  </tr>
+
+
+<% end %>
+
+<%= link_to 'Create', admin_suggestions_path(question_id:question.id, title_en:'fuck you 2',title_de:'fuck you de 2'), 'data-type' => 'json', class: "suggestion_create remote_create", method: :post, data: { confirm: 'Are you sure?' }, remote: true %>
+
+		</tbody>
+	</table>

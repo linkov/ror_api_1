@@ -1,0 +1,15 @@
+# # users
+seedUser1 = User.create :uid =>"betatest1@betatestuser.com", :email => "betatest1@betatestuser.com", :password => "4004892700", :name => "Jack1"
+seedUser2 = User.create :uid =>"betatest2@betatestuser.com", :email => "betatest2@betatestuser.com", :password => "4004892700", :name => "Jack2"
+seedUser3 = User.create :uid =>"betatest3@betatestuser.com", :email => "betatest3@betatestuser.com", :password => "4004892700", :name => "Jack3"
+seedUser4 = User.create :uid =>"betatest4@betatestuser.com", :email => "betatest4@betatestuser.com", :password => "4004892700", :name => "Jack4"
+
+seedUser5 = User.create :uid =>"betatest5@betatestuser.com", :email => "betatest5@betatestuser.com", :password => "4004892700", :name => "Jack5"
+seedUser6 = User.create :uid =>"betatest6@betatestuser.com", :email => "betatest6@betatestuser.com", :password => "4004892700", :name => "Jack6"
+seedUser7 = User.create :uid =>"betatest7@betatestuser.com", :email => "betatest7@betatestuser.com", :password => "4004892700", :name => "Jack7"
+seedUser8 = User.create :uid =>"betatest8@betatestuser.com", :email => "betatest8@betatestuser.com", :password => "4004892700", :name => "Jack8"
+seedUser9 = User.create :uid =>"betatest9@betatestuser.com", :email => "betatest9@betatestuser.com", :password => "4004892700", :name => "Jack9"
+seedUser10 = User.create :uid =>"betatest10@betatestuser.com", :email => "betatest10@betatestuser.com", :password => "4004892700", :name => "Jack10"
+seedUser11 = User.create :uid =>"betatest11@betatestuser.com", :email => "betatest11@betatestuser.com", :password => "4004892700", :name => "Jack11"
+seedUser12 = User.create :uid =>"betatest12@betatestuser.com", :email => "betatest12@betatestuser.com", :password => "4004892700", :name => "Jack12"
+seedUser13 = User.create :uid =>"betatest13@betatestuser.com", :email => "betatest13@betatestuser.com", :password => "4004892700", :name => "Jack13"

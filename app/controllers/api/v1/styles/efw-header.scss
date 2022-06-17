@@ -1,0 +1,353 @@
+.efw-header {
+
+  height: 100px;
+  background-color: #0683c9;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  position: fixed;
+
+  .header-title {
+
+    text-align: center;
+    padding-top: 23px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+  }
+
+  .right-action {
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right:0px;
+    font-size: 14pt;
+    width: 98px;
+    color:white;
+
+    button  {
+      border-radius: 22px;
+    }
+    .mdl-button--accent {
+      color: white;
+      background: black;
+    }
+  }
+
+  #efw-header-menu-button {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+
+    @include breakpoint(medium) {
+      right: -2px;
+    }
+
+    @include breakpoint(small) {
+      right: 0px;
+      top: 17px;
+
+      }
+  }
+
+  #efw-header-auth-button {
+
+    position: absolute;
+    right: 25px;
+    top: 30px;
+
+
+  }
+
+
+
+}
+
+
+
+.howl-logo {
+  width:60px;
+  height:15px;
+  position: absolute;
+  top:15px;
+  left: 13px;
+  display: none;
+}
+
+.beta-logo {
+  text-align: left;
+  position: absolute;
+  top: 53px;
+  left: 42px;
+  font-family: "Walsheim Medium" !important;
+
+  @include breakpoint(medium) {
+    left: 14px;
+  }
+}
+
+.beta-logo-mobile {
+  text-align: left;
+  position: absolute;
+  top: 44px;
+  left: 16px;
+
+
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.logo-loader {
+  height: 32px;
+  text-align: left;
+  position: absolute;
+  top: 30px;
+  left: 42px;
+  letter-spacing: 2px;
+  font-family: "Walsheim Bold";
+  font-size: 19pt;
+  width: 160px;
+  cursor: pointer;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  @include breakpoint(medium) {
+    left: 14px;
+  }
+}
+
+.logo-loader-mobile {
+  text-align: left;
+  position: absolute;
+  top: 11px;
+  left:15px;
+  letter-spacing: 1px;
+  font-family: "Walsheim Bold";
+  font-size: 28pt;
+  width: 98px;
+  cursor: pointer;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.logo-loader-active {
+
+
+  background: linear-gradient(88deg, #0399ff, #000000);
+  background-size: 1400% 1400%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+  }
+
+
+  font-weight: 800;
+}
+
+
+.side-menu  {
+  background: black;
+
+  ul {
+    padding: 20px;
+    li {
+
+      text-align: right;
+
+      a, button {
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 14pt;
+        color: white;
+        text-decoration: none;
+        padding:0;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        text-align: right;
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+}
+
+.side-menu-toggle {
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #menu-toggle {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.side-menu-toggle span.toggle-bars {
+  width: 80%;
+}
+
+.side-menu-toggle span.toggle-bars:before,.side-menu-toggle span.toggle-bars:after,.side-menu-toggle span.toggle-bars {
+  background-color: black;
+  height: 4px;
+}
+
+.side-menu-toggle span.toggle-bars:before {
+  top: -10px;
+}
+.side-menu-toggle span.toggle-bars:after {
+  top: 5px;
+}
+
+.top-menu-main {
+
+
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    // display: none;
+    //width: 305px;
+  }
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  margin: 0 auto;
+  padding-top: 34px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+
+      }
+
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        padding-left: 40px;
+        padding-right: 40px;
+        @include breakpoint(medium) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+      }
+
+    }
+  }
+}
+
+.landing-menu {
+
+
+  padding-top: 37px;
+
+  li {
+
+    .efw-menu-option-button {
+
+      h1 {
+        font-size: 20px;
+      }
+
+    }
+    margin-right: 7%;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.efw-right-action-button {
+  height: 34px;
+  min-width: 68px;
+
+  background: black !important;
+  h1 {
+    color:white;
+    font-size: 12pt;
+
+  }
+}
+
+.efw-right-action-button-disabled {
+  height: 34px;
+  min-width: 68px;
+
+
+  background: white !important;
+  h1 {
+      color:black;
+      font-size: 12pt;
+  }
+
+}
+
+.efw-header.smaller {
+  pointer-events: none;
+
+  .efw-header-menu-button {
+    pointer-events: all;
+  }
+  .logo-loader,.beta-logo {
+    opacity: 0.0;
+  }
+  .header-title {
+    opacity: 0.0;
+  }
+
+  .efw-ratecount {
+    opacity: 0.0;
+  }
+
+  .top-menu-main {
+    opacity: 0.0;
+  }
+}

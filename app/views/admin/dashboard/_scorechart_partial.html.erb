@@ -1,0 +1,14 @@
+
+<%
+
+
+  @hashData = Package.all.collect { |r|  [r.title, r.ratings.count] }
+
+
+
+
+%>
+
+
+
+<%= bar_chart(@hashData) %>

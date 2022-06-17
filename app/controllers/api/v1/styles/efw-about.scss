@@ -1,0 +1,89 @@
+.efw-about {
+
+  .main-video, .efw-about-header, .efw-about-text {
+    margin: 0 auto;
+    width: 750px;
+
+    @include breakpoint(medium) {
+      width: 550px;
+    }
+
+
+    @include breakpoint(small) {
+      width: 300px;
+    }
+  }
+
+
+  .main-video {
+    position: relative;
+    margin: 0 auto;
+
+    height: 420px;
+    margin-top: 40px;
+
+    @include breakpoint(medium) {
+      width: 550px;
+      height: 304px;
+
+    }
+
+
+    @include breakpoint(small) {
+      width: 300px;
+      height: 168px;
+
+    }
+
+    @include breakpoint(tiny) {
+    }
+
+
+    svg {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto auto;
+      font-size: 100pt;
+      z-index: 10;
+      cursor: pointer;
+      top: 0;
+      bottom: 0;
+      text-align: center;
+      line-height: 150px;
+      background: transparent;
+      border-radius: 75px;
+
+    }
+
+    .video-js {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .efw-about-header {
+    margin-top: 40px;
+    h2 {
+      font-family: "Walsheim Regular";
+      font-size: 14px;
+      color: #818181;
+    }
+
+  }
+
+  .efw-about-text {
+    p {
+      text-align: justify;
+      font-family: "Walsheim Regular";
+      font-size: 10px;
+      color: #231F20;
+      letter-spacing: 0.06em;
+      line-height: 22px;
+    }
+    margin-top: 35px;
+
+  }
+}

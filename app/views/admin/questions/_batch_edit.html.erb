@@ -1,0 +1,19 @@
+<% @questions = Question.where(:id => params['collection_selection']) %>
+<% @questions.each do |question| %>
+  <%= question.title %><br/>
+<% end %>
+<br/>
+<br/>
+<%= form_tag 'process_batch_edit_update' do %>
+<% @questions.map(&:id).each do |id| %>
+  <%= hidden_field_tag "questions[]", id %>
+<% end %>
+<%= select_tag "art_categories[]", options_for_select(ArtCategory.all.collect{|x| [x.title,x.id]}), {:multiple => :multiple,:class => 'art_category_multi_select'} %>
+  <% @questions.each do |question| %>
+    <%= fields_for "questions[]", question do |q| %>
+      <% end %>
+  <% end %>
+  <br/>
+  <br/>
+  <%= submit_tag 'Update' %>
+<% end %>

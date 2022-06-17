@@ -1,0 +1,49 @@
+.ui-widget-header {
+  background: transparent !important;
+}
+
+
+
+.rating-title {
+  font-family: Helvetica;
+  font-size: medium;
+  margin: 0px !important;
+}
+
+.rating-select {
+  opacity: .01;
+}
+
+
+.rating-slider {
+
+  margin-bottom: 20px;
+  height:2em !important;
+}
+
+.frontpage-ratings-container {
+
+  .rating-slider {
+
+    height:3em !important;
+  }
+
+  .ui-slider-handle {
+    height: 3.4em !important;
+    width: 2em !important;
+  }
+
+  .rating-label {
+    position:relative;
+    float: right;
+    text-align: center;
+  }
+
+  .rating-current-slider-position {
+    position:relative;
+    float: left;
+    text-align: center;
+  }
+
+}
+

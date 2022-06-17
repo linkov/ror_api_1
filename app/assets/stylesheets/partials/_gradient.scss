@@ -1,0 +1,9 @@
+.ui-slider-horizontal
+{
+  background: rgb(204,0,0) !important; /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(204,0,0,1) 0%, rgba(232,204,0,1) 37%, rgba(232,204,0,1) 60%, rgba(73,221,0,1) 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(204,0,0,1) 0%,rgba(232,204,0,1) 37%,rgba(232,204,0,1) 60%,rgba(73,221,0,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(204,0,0,1) 0%,rgba(232,204,0,1) 37%,rgba(232,204,0,1) 60%,rgba(73,221,0,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#49dd00',GradientType=1 ) !important; /* IE6-9 */
+  height: 100% !important;
+}

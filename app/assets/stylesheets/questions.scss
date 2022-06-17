@@ -1,0 +1,52 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.question:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.question:nth-child(even) {
+  background-color: white;
+}
+
+.question-container {
+  height: 50px;
+
+
+  .question-title {
+    float: left;
+    margin-right: 20px;
+    max-width: 60%;
+    p {
+        padding: 10px;
+        float: left;
+        margin-right: 10px;
+    }
+  }
+
+  .question-actions {
+    float: right;
+    max-width: 40%;
+
+
+    .question-action {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.question-actions-container {
+  min-height: 100px;
+  display: none;
+  margin: 10px;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+
+  .translations-action-container, .slider-action-container, .suggestions-action-container {
+    display: none;
+  }
+}

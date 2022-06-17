@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rating_type_id: 
+  focu_id: 
+  rate_level_id: 
+  description: MyText
+
+two:
+  rating_type_id: 
+  focu_id: 
+  rate_level_id: 
+  description: MyText

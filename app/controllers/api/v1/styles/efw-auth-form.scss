@@ -1,0 +1,152 @@
+.efw-auth-form {
+
+  .container {
+    padding-top: 36px;
+
+    .row {
+
+      .header {
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .facebook {
+        text-align: center;
+        background: url('/images/auth/f-login.png') no-repeat transparent;
+        width: 178px;
+        height: 32px;
+        background-size: contain;
+        background-position: center center;
+        margin: 0 auto;
+        text-align: right;
+        padding-top: 4px;
+
+        a {
+          font-family: 'Walsheim Medium', sans-serif;
+          font-size: 10px;
+          color: white;
+          margin-right: 20px;
+          letter-spacing: 0.02em;
+
+        }
+
+        a:hover, a:focus {
+          color: white !important;
+          text-decoration: none;
+        }
+      }
+      .input-group {
+        margin-top: 36px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        @include breakpoint(small) {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+
+
+
+
+        .efw-big-button {
+          p {
+            font-family: 'Walsheim Medium', sans-serif;
+            font-size: 11px;
+          }
+
+        }
+
+
+
+        .secondary-auth-action-button {
+          margin-top: 8px;
+          color:black;
+          text-decoration: underline;
+        }
+
+        input {
+          font-family: 'Walsheim Regular', sans-serif;
+          font-size: 20px;
+          box-shadow: none;
+          border: none;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  display: none;
+
+  left:0;
+  right:0;
+  width:70%;
+  height: 380px;
+  top:0;
+  bottom:0;
+  background: white;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  margin: 100px auto;
+  border-radius: 30px;
+
+  .signon-switch {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+
+    span {
+      font-family: 'Walsheim Regular', sans-serif;
+      font-size: 9pt;
+      color: black;
+      padding:0;
+      margin: 0;
+      font-weight: 400;
+      line-height: 10px;
+      letter-spacing: 0.03em;
+
+      padding-top: 16px;
+
+    }
+
+
+    .sign-in-span {
+      float: left;
+    }
+
+    label {
+
+      float: left;
+      width: 50px;
+    }
+
+
+    .sign-up-span {
+      float: left;
+      margin-left: 54px;
+      margin-right: 10px;
+    }
+  }
+
+
+
+
+
+  .mdl-grid {
+    width: 90%;
+  }
+
+  .mdl-switch {
+    margin: 10px;
+  }
+
+  .efw-auth-social {
+
+    button {}
+
+    .fa {
+
+      font-size: 34px;
+    }
+  }
+
+}

@@ -1,0 +1,74 @@
+.efw-statdetail {
+  width: 100%;
+  padding: 40px;
+  background: #EFEFEF;
+
+  .work-image-row {
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  .grid-row {
+    // padding: 54px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .statdetail-overall {
+    background: white;
+    border-radius: 16px;
+    max-width: 845px;
+    margin: 0 auto;
+    padding: 12px;
+
+    .module-title {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+    .efw-statdetail-circular {
+      padding-top: 10px;
+
+    }
+  }
+
+  .overall-statdetail-module {
+    height: 150px;
+    width: 230px;
+    margin-right: 20px;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 14px;
+    float: left;
+
+    @include breakpoint(small) {
+      float: none;
+      margin: auto;
+    }
+
+    @include breakpoint(tiny) {
+      width: auto;
+    }
+
+
+    .module-title {
+      height: 40px;
+    }
+
+    .module-content {
+      height: 90px;
+    }
+
+    .module-content-full-height {
+      height: 130px;
+    }
+  }
+  .overall-statdetail-module:last-child {
+    margin-right: 0px;
+
+    @include breakpoint(small) {
+      margin: auto;
+    }
+  }
+
+}

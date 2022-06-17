@@ -1,0 +1,96 @@
+//== Forms
+.form-control {
+  font-size: 18px;
+}
+
+select[multiple] + .btn-group {
+  width: 100%;
+
+  .multiselect {
+    border-color: $input-border;
+    color: $input-color;
+    font-size: 18px;
+    height: $input-height-base;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    .caret {
+      position: absolute;
+      right: 7px;
+      top: 15px;
+    }
+
+    + .multiselect-container {
+      width: 100%;
+
+      > li {
+        > a > label {
+          padding-left: 30px;
+        }
+
+        &.active {
+          > a > label {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-devise {
+  text-align: left;
+  margin: 100px auto;
+  max-width: 385px;
+  width: 100%;
+
+  &.form-pass-new {
+    max-width: 385px;
+  }
+
+  .btn-block {
+    margin-bottom: 8px;
+  }
+
+  .pull-up {
+    margin-top: -19px;
+  }
+
+  .checkbox {
+    margin-top: -5px;
+    margin-bottom: 29px;
+  }
+
+  .form-group {
+    margin-bottom: 19px;
+  }
+
+  .panel-heading {
+    padding: {
+      left: 19px;
+      right: 19px;
+    };
+  }
+
+  .panel-body {
+    padding: 19px 19px 11px;
+  }
+}
+
+
+//Registration form items
+.section-item {
+  textarea {
+    height: 110px;
+    resize: none;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+textarea.card-section-value {
+  max-width: 300px;
+  width: 200px;
+  border-color: $inputBorderColor;
+}

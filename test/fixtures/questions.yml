@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating_type_id: 
+  rate_level_id: 
+
+two:
+  title: MyString
+  rating_type_id: 
+  rate_level_id: 

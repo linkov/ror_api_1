@@ -1,0 +1,65 @@
+.efw-main-category-select {
+
+  width: 270px;
+  min-height: 180px;
+  position: relative;
+
+  @include breakpoint(small) {
+    margin: 0 auto;
+  }
+
+  .all-categories {
+
+    position: absolute;
+    width: 270px;
+    left: -10px;
+
+    .list-group-item {
+      width:50%;
+      cursor: pointer;
+      height: 33px;
+      float:left;
+      display:inline;
+      background-color: white;
+      border-color: white;
+      padding: 0;
+
+      p {
+
+        text-align: center;
+        float: left;
+        padding: 8px;
+        color: black;
+        background-color: white;
+        border-color: white;
+        border-radius: 15px;
+        border: 1px solid white;
+        line-height: 10px;
+        font-family: 'Walsheim Regular', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+      }
+    }
+    .active {
+
+
+        p {
+          text-align: center;
+          float: left;
+          padding: 8px;
+          border-color: white;
+          border-radius: 15px;
+          border: 1px solid $efw-color-accent;;
+          color: $efw-color-accent;
+        }
+
+    }
+
+
+
+  }
+
+  .all-categories :first-child {
+
+  }
+}

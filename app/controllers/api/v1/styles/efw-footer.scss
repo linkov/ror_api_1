@@ -1,0 +1,40 @@
+
+.efw-footer,
+.push {
+  height: 30px;
+}
+
+.efw-footer {
+  background: transparentize(#D2D4D5, 0.5);
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  text-align: center;
+
+  .links-line {
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 0px;
+
+
+    li {
+
+      a {
+        text-align: center;
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 7pt;
+        color: #838383;
+        padding:0;
+        margin: 0;
+        font-weight: 200;
+        line-height: 10px;
+        letter-spacing: 0.03em;
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.text-large {
+  font-size: $font-size-large;
+}
+
+//Vertical align
+.vertical-align {
+  @include vertical-align();
+}
+
+.vertical-align-abs {
+  @include vertical-align(absolute);
+}
+
+.vertical-align-parent {
+  @include vertical-align-parent();
+}
+
+.vertical-align-md {
+  @media (min-width: $screen-md-min) {
+    @include vertical-align();
+  }
+}
+
+.vertical-align-abs-md {
+  @media (min-width: $screen-md-min) {
+    @include vertical-align(absolute);
+  }
+}
+
+.vertical-align-parent-md {
+  @media (min-width: $screen-md-min) {
+    @include vertical-align-parent();
+  }
+}
+
+.vertical-align-md {
+  @media (min-width: $screen-lg-min) {
+    @include vertical-align();
+  }
+}
+
+.vertical-align-abs-lg {
+  @media (min-width: $screen-lg-min) {
+    @include vertical-align(absolute);
+  }
+}
+
+.vertical-align-parent-lg {
+  @media (min-width: $screen-lg-min) {
+    @include vertical-align-parent();
+  }
+}
+
+//Flex box layout
+.flex {
+  @include flex;
+}
+
+.flex-md {
+  @media (min-width: $screen-md-min) {
+    @include flex;
+  }
+}
+
+.flex-lg {
+  @media (min-width: $screen-lg-min) {
+    @include flex;
+  }
+}

@@ -1,0 +1,101 @@
+<% if question.slider_type %>
+<% if question.slider_type.code == "emo" || question.slider_type.code == "normal" %>
+
+<h3 class="slider-question-title"><%=question.title%></h3>
+<div class="slider-container">
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_10.png") %>
+    <div class="slider-circle"></div>
+  </div>
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_20.png") %>
+    <div class="slider-circle"></div>
+  </div>
+
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_30.png") %>
+    <div class="slider-circle"></div>
+  </div>
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_40.png") %>
+    <div class="slider-circle"></div>
+  </div>
+
+
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_50.png") %>
+    <div class="slider-circle"></div>
+  </div>
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_60.png") %>
+    <div class="slider-circle"></div>
+  </div>
+
+
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_70.png") %>
+    <div class="slider-circle"></div>
+  </div>
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_80.png") %>
+    <div class="slider-circle"></div>
+  </div>
+
+
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_90.png") %>
+    <div class="slider-circle"></div>
+  </div>
+  <div class="slider-segment-top">
+    <%= image_tag("https://s3.eu-central-1.amazonaws.com/efwfileupload/rails_slider/"+question.slider_type.code+"_100.png") %>
+    <div class="slider-circle"></div>
+  </div>
+
+  <div class="slider-line"></div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_10_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_10_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_20_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_20_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_30_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_30_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_40_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_40_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_50_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_50_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_60_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_60_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_70_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_70_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_80_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_80_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_90_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"> <%= best_in_place question, :slider_wording_90_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+  <div class="slider-segment-bottom">
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_100_en, :as => :input, url: [:admin,question] %></div>
+    <div class="slider-translation"><%= best_in_place question, :slider_wording_100_de, :as => :input, url: [:admin,question] %></div>
+  </div>
+</div>
+<% end %>
+<% end %>

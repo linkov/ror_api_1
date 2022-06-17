@@ -1,0 +1,16 @@
+$color-brand:#347fd6;
+
+$color-primary: #347fd6;
+
+
+$efw-color-accent: #0000FF;
+$efw-color-background-accent: #EDEDED;
+$efw-color-accent-on-black: #3445FF;
+
+@import "ember-side-menu";
+@import "frontend";
+
+
+.efw-application {
+  min-height: calc(100vh - 30px);
+}

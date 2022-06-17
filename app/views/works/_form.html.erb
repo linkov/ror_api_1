@@ -1,0 +1,30 @@
+<%= bootstrap_form_for(@work, html: { multipart: true }) do |f| %>
+  <% if @work.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@work.errors.count, "error") %> prohibited this work from being saved:</h2>
+
+      <ul>
+      <% @work.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+
+    <%= f.text_field :title, hide_label: true, placeholder: "Title", :class=>"form-control", :id=>"titleField" %>
+    <%= f.text_area :description, hide_label: true, placeholder: "Description", :class=>"form-control", :id=>"descriptionField" %>
+    <%= f.file_field :picture, hide_label: true, :class=>"form-control", :id=>"pictureField" %>
+
+
+    <%= f.collection_select(:work_category_id, WorkCategory.all, :id, :name, {:hide_label => true, :prompt => "Select main category"}) %>
+    <%= f.collection_select(:focu_id, Focu.all, :id, :title, {:hide_label => true, :prompt => "Select focus"}) %>
+
+    <div class="form-group" id="ratingTypes">
+    </div>
+
+  <ul class="list-inline">
+    <li><%= f.submit 'Upload', :class=>"btn btn-success" %></li>
+    <li><%= button_tag "Reset", type: :reset, :class=>"btn btn-default" %></li>
+  </ul>
+<% end %>

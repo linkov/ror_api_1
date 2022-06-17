@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+
+<%= image_tag @work.picture() if @work.picture? %>
+
+
+
+<ul>
+  <% @rating_types.all.each do |type| %>
+      <li>
+
+        <p><%= type.name %></p>
+
+
+      </li>
+  <% end %>
+</ul>
+
+
+<p>
+  <strong>Category:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @work.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @work.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_work_path(@work) %>

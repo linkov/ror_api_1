@@ -1,0 +1,186 @@
+
+<li id="work-<%= statisticswork.id %>">
+
+  <div class="row">
+    <div class="stats-turn-off-work-container col-md-8" id="<%= statisticswork.id %>">
+      <p>Stop showing this content to others</p>
+    </div>
+  </div>
+
+  <div class="row">
+
+
+    <div class="col-md-3 stats-image-container">
+      <%= link_to (image_tag (statisticswork.picture_url() ), class: 'work-preview'),  edit_work_path(statisticswork) %>
+    </div>
+
+
+    <div class="col-md-8 stats-work-container">
+      <% if current_user == (statisticswork.user) %>
+
+          <table class="table table-borderless">
+            <% statisticswork.rating_types.all.each do |ratingtype| %>
+
+                <%
+
+                  @rr =Rating.where(:rating_type_id => ratingtype.id,:work_id =>statisticswork.id);
+
+                  @rr = @rr.collect(&:score).sum.to_f/@rr.length if @rr.length > 0;
+
+                  if @rr.is_a? ActiveRecord::Relation
+
+                    return;
+
+                  end
+                  @average_score = @rr.round;
+
+                %>
+                <tr>
+
+                  <td>
+                    <div class="progress progress-work-container">
+                      <span class="label label-default" style="position: absolute; float: left;text-align: center;"><%= ratingtype.name  %></span>
+                    <div class="rating-slider-passive-container" style="width:<%= @average_score %>%">
+                      <div class="ui-slider-horizontal"></div>
+                    </div>
+                      </div>
+                  </td>
+                  <% @ratecolor = Ratecolor.find_by_rating(@average_score) %>
+                  <td class="rating-average-td">
+                    <h4 class="rating-average" style="background-color:rgba(<%= @ratecolor.red %>,<%= @ratecolor.green %>,0,1);"><%= @average_score %></h4>
+                  </td>
+
+                </tr>
+            <% end %>
+          </table>
+
+      <% end %>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8 stats-feedback-scroller-container">
+
+      <% @users =  statisticswork.ratings.collect(&:author).uniq %>
+
+      <ul style="width: <%= [@users.count*220,500].max %>px;">
+
+        <% @users.each do |user| %>
+
+
+      <li class="scroller-user-content" id="user_id_<%= user.id %>">
+
+        <div class="stats-feedback-scroller-username">
+          <%= user.name %>
+
+          <% if user.works.count != 0 %>
+          <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <% end %>
+
+        </div>
+
+        <% if user.works.count != 0 %>
+
+        <%
+
+          @allworks = user.works.all
+          @overallRatingTypes = RatingType.where("name like ?","%Overall%")
+          @allratings = Rating.where(work: @allworks,rating_type_id: @overallRatingTypes.collect(&:id))
+          @score = @allratings.collect(&:score).sum.to_f/@allratings.length if @allratings.length > 0
+
+
+          if !@score or @allworks.count == 0
+            @score = 0
+          end
+
+          @score = @score.round
+
+
+        %>
+
+        <div class="stats-feedback-scroller-ratings">
+
+          <div class="progress progress-work-container" style="width: 130px !important; float: left !important;">
+            <span class="label label-default" style="position: absolute; float: left;text-align: center;">Overall</span>
+            <div class="rating-slider-passive-container" style="width:<%= @score %>%">
+              <div class="ui-slider-horizontal"></div>
+            </div>
+          </div>
+
+          <% @ratecolor = Ratecolor.find_by_rating(@score) %>
+          <div class="rating-average-td" style="width: 30px; float: left !important; margin-left: 10px !important;">
+            <h4 class="rating-average" style="background-color:rgba(<%= @ratecolor.red %>,<%= @ratecolor.green %>,0,1);"><%= @score %></h4>
+          </div>
+
+        </div>
+
+        <div class="hidden-user-related-ratings" style="display: none;">
+
+          <table class="table table-condensed table-borderless">
+
+
+            <% statisticswork.rating_types.all.each do |category| %>
+                <tr>
+
+                  <%
+
+                    @average_score = 0;
+
+                    @all_ratings_for_all_user_works =  Rating.where(work: user.works.all)
+
+                    @all_ratings_for_current_cat_where_works_are_user_works = Rating.where(:rating_type_id => category.id,:id => @all_ratings_for_all_user_works.collect(&:id));
+
+
+                    @ratings_filtered = @all_ratings_for_current_cat_where_works_are_user_works;
+
+                    if @ratings_filtered
+                      @average_score =  @ratings_filtered.collect(&:score).sum.to_f/@ratings_filtered.length if @ratings_filtered.length > 0;
+                      @average_score = @average_score.round;
+
+                      else
+
+                      @average_score = 0;
+
+                    end
+
+
+
+                    @ratecolor = Ratecolor.find_by_rating(@average_score);
+
+
+                  %>
+                  <td class="rating-average-td">
+                    <h4 class="rating-average"  style="background-color:rgba(<%= @ratecolor.red %>,<%= @ratecolor.green %>,0,1);"><%=  @average_score %>
+                    </h4>
+                  </td>
+
+                  <td class="rating-slider-td">
+
+                    <div class="progress progress-work-container">
+
+                      <div class="rating-slider-passive-container" style="width:<%= @average_score %>%">
+                        <div class="ui-slider-horizontal"></div>
+                      </div>
+
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="label label-default rating-label"><%= category.name %></span>
+                  </td>
+
+                </tr>
+            <% end %>
+          </table>
+
+        </div>
+        <% end %>
+      </li>
+
+        <% end %>
+      </ul>
+
+    </div>
+  </div>

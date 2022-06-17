@@ -1,0 +1,112 @@
+.efw-project-component {
+
+  .test-a-work-title {
+    text-align: center;
+  }
+
+  .project-action-button {
+    h1 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  @include breakpoint(smallplus) {
+    padding-top: 50px;
+  }
+
+.efw-project-right {
+
+  width:45%;
+  float: right;
+
+  @include breakpoint(smallplus) {
+    width:100%;
+    float: left;
+  }
+
+}
+  .efw-col {
+
+    // max-width: 420px;
+  }
+
+  label {
+    margin-bottom: 20px;
+    font-family: 'Walsheim Bold', sans-serif;
+    font-size: 11pt;
+    color: black;
+    letter-spacing: 0.03em;
+
+  }
+
+  textarea, input {
+    font-family: 'Walsheim Regular', sans-serif;
+    font-size: 12px;
+  }
+
+  .efw-next-button {
+    bottom: 70px !important;
+  }
+
+  #project-gallery-area {
+    height: 204px;
+    width: 100%;
+  }
+
+  #project-info-area {
+
+
+    width: 100%;
+    // height: 74%;
+
+
+    .efw-col-center-padded {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+
+    .project-info-row {
+      width: 800px;
+      margin: 0 auto;
+          margin-bottom: 30px;
+
+      @include breakpoint(smallplus) {
+        width:80%;
+
+      }
+
+      .efw-col {
+          margin-bottom: 40px;
+      }
+
+
+      input, textarea {
+        background: white;
+        border: 0;
+        box-shadow: none;
+        padding-left: 0;
+      }
+    }
+
+    .project-info-row-first {
+      // margin-top: 50px;
+    }
+
+
+    .project-info-item {
+      width:80%;
+      margin:  0 auto;
+      min-height: 60px;
+
+
+      .mdl-textfield {
+        width: 100%;
+      }
+
+    }
+
+  }
+}

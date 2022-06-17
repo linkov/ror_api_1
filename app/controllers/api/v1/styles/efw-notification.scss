@@ -1,0 +1,13 @@
+.efw-notification {
+  background-color: black;
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size: 14px;
+}
+
+.efw-notification-fail {
+  background-color: black;
+
+}
+.efw-notification-success {
+  background-color: $efw-color-accent;
+}

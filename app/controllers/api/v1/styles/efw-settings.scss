@@ -1,0 +1,138 @@
+.efw-settings {
+
+  .container {
+    border-radius: 20px;
+  }
+
+
+  .header-title {
+    text-align: center;
+    margin: 30px;
+    margin-top: 63px;
+  }
+
+
+
+
+
+
+  .reset-password-button {
+      width: 184px;
+      border: 2px solid black !important;
+      background-color: transparent !important;
+  }
+
+  label {
+    color: #818181;
+    margin-bottom: 18px;
+    font-family: 'Walsheim Regular', sans-serif;
+    font-size: 14px;
+    color: #818181;
+    font-weight: 100;
+  }
+
+  input,textarea {
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    background: transparent;
+
+  }
+
+  select {
+    color: black;
+  }
+
+  .info-row {
+    margin-top: 50px;
+
+    .form-col {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer-row {
+
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .terms-link {
+      font-family: 'Walsheim Regular', sans-serif;
+      font-size: 10px;
+      color: black;
+      font-weight: 800;
+      margin-top: 6px;
+    }
+  }
+  .notifications-row {
+
+
+    .form-col {
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    .header-title {
+      margin-bottom: 58px;
+    }
+    label {
+
+      color:black;
+      font-weight: 600;
+    }
+
+  }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Walsheim Regular', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Walsheim Regular', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Walsheim Regular', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Walsheim Regular', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+  //   .input-group {
+  //     margin: 20px 0 20px 0 ;
+  //   }
+  //
+  //   .fill-class-2 {
+  //     stroke: black;
+  //     fill: white;
+  //     stroke-width: 6
+  //   }
+  //
+  //   .stroke-class {
+  //     stroke: black;
+  //     stroke-width: 6
+  //   }
+  //
+  //   .fill-class-1 {
+  //     fill:  black;
+  //   }
+  //
+  //   .main-shape {
+  //     stroke-width: 6
+  //   }
+  //
+  //
+  //
+  // .efw-password-reset {
+  //   .input-group {
+  //     padding: 10px;
+  //   }
+  // }
+}

@@ -1,0 +1,1 @@
+.btn-default {  &:hover,  &:focus,  &.focus {    background-color: lighten($btn-primary-bg, 15%);    color: $btn-primary-color;  }  &:active,  &.active {    background-color: $btn-primary-bg;    color: $btn-primary-color;    @include box-shadow(none);  }}

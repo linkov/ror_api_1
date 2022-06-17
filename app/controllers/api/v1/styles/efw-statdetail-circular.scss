@@ -1,0 +1,43 @@
+.efw-statdetail-circular {
+
+    width: 230px;
+    height: 60px;
+    margin: 0 auto;
+
+
+    .circular-info-item {
+      width: 55px;
+      height: 55px;
+      margin-right: 27px;
+      float: left;
+
+      .static-circle, .moving-cicle {
+        fill:white;
+      }
+
+
+    }
+    .circular-info-item:last-child {
+      margin-right:0;
+    }
+    .circular-info-emoji {
+
+      position: relative;
+
+      svg {
+        width: 55px;
+        height: 55px;
+
+      }
+
+      img {
+        position: absolute;
+        top: -5px;
+        width: 65px;
+        height: 65px;
+        left: -5px;
+      }
+
+    }
+
+}

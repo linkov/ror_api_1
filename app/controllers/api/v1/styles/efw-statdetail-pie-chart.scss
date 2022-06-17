@@ -1,0 +1,69 @@
+.efw-statdetail-pie-chart {
+  #pie-chart {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    @include breakpoint(small) {
+      left: 0;
+    }
+
+    @include breakpoint(tiny) {
+      left: -10px;
+    }
+  }
+
+  .pie-legend {
+    position: absolute;
+    right: -18px;
+    top: 40px;
+
+    @include breakpoint(tiny) {
+      right: 10px;
+    }
+
+    .info-row {
+      width: 100px;
+      clear: both;
+      margin-bottom: 10px;
+
+      .circle-col {
+        width: 12px;
+        float: left;
+        margin-right: 8px;
+
+        svg {
+          circle {
+            // fill: transparent;
+            // stroke:black;
+            // stroke-width:2px;
+          }
+        }
+      }
+      .title-col {
+        float: left;
+        margin-right: 10px;
+        font-family: 'Walsheim Regular', sans-serif;
+        font-size: 11px;
+        padding-top: 2px;
+      }
+      .percent-col {
+        float: right;
+        font-family: 'Walsheim Medium', sans-serif;
+        font-size: 11px;
+        padding-top: 2px;
+      }
+
+      .positive-row {
+        stroke:#0000FF;
+      }
+      .neutral-row {
+        stroke:#B1B1B1;
+      }
+      .negative-row {
+        stroke:#000000;
+      }
+    }
+  }
+}

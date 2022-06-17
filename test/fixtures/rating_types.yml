@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+root1:
+  name: Technical Quality of the Composition
+
+root2:
+  name: Emotional effects of the composition

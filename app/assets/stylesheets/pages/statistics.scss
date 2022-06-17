@@ -1,0 +1,275 @@
+
+.rating-slider-passive-container {
+  background-color: transparent;
+  height: 40px;
+  overflow: hidden;
+}
+
+.progress-work-container {
+
+  .ui-slider-horizontal {
+    width: 320px;
+  }
+}
+
+.rating-slider-td {
+
+   width: 320px;
+}
+
+#stats-container {
+  display: none !important;
+}
+
+@media handheld, screen and (max-width: 995px) {
+
+  .sweet-alert {
+
+    .rating-slider-td {
+
+      width: 140px !important;
+    }
+    .rating-label {
+      width: 100px !important;
+      text-align: left !important;
+      position: absolute;;
+    }
+    .progress-work-container {
+
+
+
+      .ui-slider-horizontal {
+        width: 130px !important;
+      }
+    }
+
+    table {
+      margin-left:20px;
+      width: 145px !important;
+    }
+
+  }
+
+  #stats-container {
+    display: block !important;
+  }
+
+  td {
+    padding: 2px !important;
+  }
+
+  .label-default {
+    background-color: transparent !important;
+    color: #0a2b1d;
+    font-size: 100%;
+  }
+
+  .progress-work-container {
+    width: 100% !important;
+    border: solid 1px black;
+    border-radius: 0%;
+
+  }
+
+  .rating-slider-passive-container {
+    height: 20px;
+    background: rgba(54, 25, 25, .5);
+
+  }
+
+
+
+
+
+
+  /////////
+
+  #overall-stats-works {
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .ui-slider-horizontal {
+
+      width: 130px;
+    }
+
+    .progress-work-container {
+
+      margin-bottom: 4px;
+     // width: 206px;
+
+    }
+
+    //.stats-feedback-scroller-container {
+    //  margin-top: 10px;
+    //  width: 350px;
+    //  height: 140px;
+    //  overflow: hidden;
+    //}
+
+
+
+    .stats-feedback-scroller-container {
+
+      margin-top: 10px;
+      border: solid 2px black;
+      width: 100%;
+      height:80px;
+      padding-left: 0px;
+      padding-right: 0px;
+      overflow: hidden;
+
+      li {
+        display: inline-block;
+        width: 200px;
+      }
+    }
+
+
+
+    .stats-turn-off-work-container {
+      width:260px;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: lightgrey;
+      float: right;
+      margin-right: 5px;
+      font-size: 100%;
+      line-height: 30px;
+      border: solid 1px black;
+    }
+
+
+  }
+
+  .stats-image-container {
+
+    border: solid 1px gray;
+    width: 45%;
+    height:150px;
+    padding-left: 10px;
+    margin-right: 5px;
+    background-color: lightgrey;
+    float: left;
+
+    .work-preview {
+      max-height:100%; max-width:100%;
+    }
+
+  }
+  .stats-work-container {
+    border: solid 2px black;
+    width: 50%;
+    height: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: lightgrey;
+    float: right;
+    overflow: hidden;
+  }
+
+  .stats-work-container table {
+    width:145px;
+  }
+
+  .stats-feedback-scroller-username {
+    font-weight: bold;
+  }
+
+
+  ////
+
+
+  .rating-average {
+    border: solid 1px black;
+    margin: 0px;
+    padding: 3px;
+    font-size: small;
+    text-align: center;
+  }
+
+  .rating-average-td {
+    width: 10px;
+    padding-right: 8px;
+    overflow: hidden;
+  }
+
+
+  #overall-stats {
+
+    .ui-slider-horizontal {
+
+      width: 200px;
+    }
+
+    padding-left: 10px;
+    padding-right: 5px;
+
+
+
+    .rating-slider-td {
+
+      width:140px;
+      padding-right: 8px;
+    }
+
+
+    .rating-timestat-td {
+
+     // width: 60px;
+      padding-right: 8px;
+
+      h4 {
+        text-align: center;
+        font-size: small;
+        border: solid 1px black;
+        margin: 0px;
+        padding: 3px;
+      }
+
+    }
+
+
+
+
+  }
+}
+
+
+
+
+@media handheld, screen and (max-width: 340px) {
+
+  .stats-image-container {
+
+    border: solid 1px gray;
+    width: 300px;
+    height:150px;
+    padding-left: 10px;
+    margin: 0 auto;
+    background-color: lightgrey;
+
+    .work-preview {
+      max-height:100%; max-width:100%;
+    }
+
+  }
+  .stats-work-container {
+    border: solid 2px black;
+    width: 300px;
+    height: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: lightgrey;
+    float: left;
+    overflow: hidden;
+  }
+
+  .ui-slider-horizontal {
+
+    width: 290px !important;
+  }
+}
+

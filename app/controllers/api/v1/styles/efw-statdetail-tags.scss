@@ -1,0 +1,32 @@
+.efw-statdetail-tags {
+
+      height: 80px;
+      overflow: hidden;
+
+  .tag  {
+    float: left;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 11px;
+    min-width: 40px;
+    background-color: white;
+    margin-right: 6px;
+    margin-bottom: 18px;
+
+    p {
+          text-align: center;
+          font-family: 'Walsheim Regular', sans-serif;
+          font-size: 10px;
+          margin: 0;
+          padding: 0;
+          padding-left: 4px;
+          padding-right: 4px;
+          max-width: 180px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+    }
+  }
+
+
+}

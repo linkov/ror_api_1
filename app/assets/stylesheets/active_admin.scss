@@ -1,0 +1,149 @@
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.css.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+@import "questions";
+
+$skinMainFirstColor: #000000!default;
+$skinMainSecondColor: #0000FF!default;
+$skinBorderWindowColor: #000000!default;
+
+@import "wigu/active_admin_theme";
+
+
+
+.footer {
+  display: none;
+}
+
+.login {
+
+  h2 {
+    text-align: center;
+  }
+}
+.formtastic fieldset > ol >li.radio fieldset ol li {
+  margin:0.1em 0.5em 0.5em 0;
+  display: inline-block;
+}
+
+.suggestions {
+
+  display: none;
+}
+
+#question_banned_input {
+  label {
+    color:red;
+  }
+}
+#package_video_input {
+  .inline-hints {
+    video {
+     width: 100px;
+   }
+  }
+}
+#question_video_input {
+  .inline-hints {
+    video {
+     width: 270px;
+   }
+  }
+}
+
+.slider-question-title {
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.slider-container {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+
+  .slider-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+  }
+
+  .slider-translation {
+    height: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .slider-line {
+    clear:both;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+
+  }
+  .slider-segment-top {
+    float: left;
+    width: 10%;
+    position: relative;
+    img {
+      padding-left: 3px
+    }
+  }
+
+  .slider-segment-bottom {
+    margin-top: 20px;
+    float: left;
+    width: 10%;
+  }
+}
+
+.art_category_multi_select {
+  width:500px;
+  height: 500px;
+}
+
+
+td.col.col-frontend_link, td.col.col-backend_link {
+  width: 200px;
+}
+
+
+.col-importance, .col-slider_type, .col-phrasing, .col-package {
+  width: 30px;
+  overflow: hidden;
+
+  span {
+    overflow: hidden;
+    width: 30px;
+  }
+}
+
+.col-link, .col-en, .col-de, .col-actions {
+  max-width: 50px;
+  overflow: hidden;
+
+  span {
+    overflow: hidden;
+    max-width: 50px;
+  }
+}

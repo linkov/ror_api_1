@@ -1,0 +1,40 @@
+.efw-ratecount {
+  position: absolute;
+  right: 100px;
+  top: 34px;
+
+
+
+  @include breakpoint(small) {
+    right: 58px;
+    top: 21px;
+
+    }
+
+  .g-coin {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 8px;
+  }
+
+  .g-count {
+        float: left;
+    h3 {
+        font-size: 14px;
+        line-height: 24px;
+
+        border-radius: 16px;
+        background: $efw-color-accent;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .g-count-red {
+      background: red;
+    }
+  }
+
+}

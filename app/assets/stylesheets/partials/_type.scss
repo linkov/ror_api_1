@@ -1,0 +1,26 @@
+//TODO: Use bootstrap variables where possible
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 80px 0 15px 0;
+}
+
+h4 {
+  color: #9FB0C3;
+  font-weight: 300;
+}
+
+h5 {
+  color: $text-color;
+  font-weight: 300;
+  margin: 0px 0 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  &.text-large {
+    margin-bottom: 20px;
+  }
+}

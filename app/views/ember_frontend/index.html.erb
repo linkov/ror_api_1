@@ -1,0 +1,22 @@
+<!-- app/views/application/index.html.erb -->
+<%= render_ember_app :frontend do |head, body| %>
+    <% head.append do %>
+        <%= csrf_meta_tags %>
+        <%= favicon_link_tag "apple-touch-icon-120.png",
+                             rel: "apple-touch-icon",
+                             sizes: "120x120",
+                             type: "image/png" %>
+        <%= favicon_link_tag "apple-touch-icon-120x120.png",
+                             rel: "apple-touch-icon",
+                             sizes: "120x120",
+                             type: "image/png" %>
+        <%= favicon_link_tag "apple-touch-icon-120x120-precomposed.png",
+                             rel: "apple-touch-icon",
+                             sizes: "120x120",
+                             type: "image/png" %>
+    <% end %>
+
+    <% body.append do %>
+
+    <% end %>
+<% end %>

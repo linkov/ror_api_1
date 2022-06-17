@@ -1,0 +1,50 @@
+.efw-stats-info {
+  .package-name {
+    width: 100%;
+    text-align: center;
+    height: 28px;
+    padding-top: 3px;
+    h3 {
+      color: #808080;
+      font-family: "Walsheim Regular";
+      font-size: 10px;
+    }
+  }
+  .package-info-line {
+    width: 180px;
+    height: 58px;
+    margin: 0 auto;
+
+
+    .package-info-item {
+      width: 45px;
+      height: 45px;
+      margin-right: 22px;
+      float: left;
+
+
+    }
+    .package-info-item:last-child {
+      margin-right:0;
+    }
+    .package-info-emoji {
+
+      position: relative;
+
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+
+      img {
+        position: absolute;
+        top: -5px;
+        width: 54px;
+        height: 54px;
+        left: -5px;
+      }
+
+    }
+
+  }
+}

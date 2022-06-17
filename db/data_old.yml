@@ -1,0 +1,1024 @@
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - "$2a$10$3JiJ13XoAY9gk5mrlCvbYenuCNs6lILvD.tidQ0rfycL1uavwU08e"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+
+---
+focus:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  - code
+  records:
+  - - 1
+    - Technique
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - technique
+  - - 2
+    - Emotion
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - emotion
+  - - 3
+    - Idea
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - idea
+
+---
+rate_levels:
+  columns:
+  - id
+  - value
+  - created_at
+  - updated_at
+  - code
+  records:
+  - - 1
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - beginner
+  - - 2
+    - 2
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - intermediate
+  - - 3
+    - 3
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - pro
+
+---
+rating_types:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  - focu_id
+  - parent_id
+  - ancestry
+  - position
+  - code
+  records:
+  - - 1
+    - Technical Quality of composition
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    -
+    - 1
+    - tech_q_comp
+  - - 2
+    - Intuitive aspects of the composition
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    -
+    - 1
+    - emo_aspects
+  - - 3
+    - Intellectual aspects of the Composition
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    -
+    - 1
+    - idea_in_comp
+  - - 4
+    - Compositional techniques
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    - '1'
+    - 1
+    -
+  - - 5
+    - Background
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    - 1/4
+    - 1
+    -
+  - - 6
+    - Background character framing
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    - 1/4/5
+    - 1
+    -
+  - - 7
+    - Background main dramaturgy
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+    - 1
+    -
+    - 1/4/5
+    - 1
+    -
+
+---
+questions:
+  columns:
+  - id
+  - title
+  - rating_type_id
+  - rate_level_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - L1 question?? tech_q_comp
+    - 1
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 2
+    - L1 question?? emo_aspects
+    - 2
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 3
+    - L1 question?? idea_in_comp
+    - 3
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 4
+    - L2 question?? compositional_tech
+    - 4
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 5
+    - L3 question?? background
+    - 5
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 6
+    - L4-1 question?? background_char
+    - 6
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 7
+    - L4-2 question?? background_drama
+    - 7
+    - 1
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+
+---
+rate_type_descriptions:
+  columns:
+  - id
+  - rating_type_id
+  - focu_id
+  - rate_level_id
+  - description
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - 1
+    - 'In der bildenden Kunst ist die Komposition eine Bezeichnung für den formalen
+      Aufbau von Kunstwerken, der die Beziehungen der Gestaltungselemente untereinander
+      betrifft. '
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 2
+    - 4
+    - 1
+    - 1
+    - Die Komposition eines Bildes verdeutlicht vom Bildrand ausgehend die dynamische
+      oder statische Anordnung von Objekten (Diagonale/Senkrechte), kann Disharmonie
+      oder Spannung erzeugen.
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 3
+    - 5
+    - 1
+    - 1
+    - Der Bildhintergrund verdeutlicht den Bild-Vordergrund oder fügt zusätzliche
+      erzählerische Elemente bei. Somit kann die erzählerische oder ästhetssche Wirkung
+      des Bildes betont, oder (bewusst) asurdum geführt werden.
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 4
+    - 6
+    - 1
+    - 1
+    - Unterstützt der Bildhintergrund das Geschehen im Vordergrund, bezogen auf Ästhetik
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 5
+    - 7
+    - 1
+    - 1
+    - Unterstützt der Bildhintergrund das Geschehen im Vordergrund, bezogen auf die
+      Dramaturgie.
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+  - - 6
+    - 7
+    - 3
+    - 1
+    - Intellectual aspects of the Composition.Intellectual aspects of the Composition
+      Intellectual aspects of the Composition Intellectual aspects of the CompositionIntellectual
+      aspects of the Composition
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+
+---
+ratecolors:
+  columns:
+  - id
+  - rating
+  - red
+  - green
+  records: 
+  - - 1
+    - 0
+    - 204
+    - 2
+  - - 2
+    - 1
+    - 205
+    - 7
+  - - 3
+    - 2
+    - 205
+    - 13
+  - - 4
+    - 3
+    - 206
+    - 18
+  - - 5
+    - 4
+    - 207
+    - 23
+  - - 6
+    - 5
+    - 208
+    - 29
+  - - 7
+    - 6
+    - 208
+    - 34
+  - - 8
+    - 7
+    - 209
+    - 40
+  - - 9
+    - 8
+    - 210
+    - 46
+  - - 10
+    - 9
+    - 211
+    - 52
+  - - 11
+    - 10
+    - 211
+    - 57
+  - - 12
+    - 11
+    - 212
+    - 63
+  - - 13
+    - 12
+    - 213
+    - 68
+  - - 14
+    - 13
+    - 214
+    - 73
+  - - 15
+    - 14
+    - 215
+    - 79
+  - - 16
+    - 15
+    - 215
+    - 84
+  - - 17
+    - 16
+    - 216
+    - 90
+  - - 18
+    - 17
+    - 217
+    - 96
+  - - 19
+    - 18
+    - 218
+    - 102
+  - - 20
+    - 19
+    - 218
+    - 107
+  - - 21
+    - 20
+    - 219
+    - 112
+  - - 22
+    - 21
+    - 220
+    - 118
+  - - 23
+    - 22
+    - 221
+    - 123
+  - - 24
+    - 23
+    - 221
+    - 129
+  - - 25
+    - 24
+    - 222
+    - 134
+  - - 26
+    - 25
+    - 223
+    - 141
+  - - 27
+    - 26
+    - 224
+    - 146
+  - - 28
+    - 27
+    - 224
+    - 152
+  - - 29
+    - 28
+    - 225
+    - 157
+  - - 30
+    - 29
+    - 226
+    - 162
+  - - 31
+    - 30
+    - 227
+    - 168
+  - - 32
+    - 31
+    - 227
+    - 173
+  - - 33
+    - 32
+    - 228
+    - 179
+  - - 34
+    - 33
+    - 229
+    - 185
+  - - 35
+    - 34
+    - 230
+    - 190
+  - - 36
+    - 35
+    - 230
+    - 196
+  - - 37
+    - 36
+    - 231
+    - 201
+  - - 38
+    - 37
+    - 232
+    - 204
+  - - 39
+    - 38
+    - 232
+    - 204
+  - - 40
+    - 39
+    - 232
+    - 204
+  - - 41
+    - 40
+    - 232
+    - 204
+  - - 42
+    - 41
+    - 232
+    - 204
+  - - 43
+    - 42
+    - 232
+    - 204
+  - - 44
+    - 43
+    - 232
+    - 204
+  - - 45
+    - 44
+    - 232
+    - 204
+  - - 46
+    - 45
+    - 232
+    - 204
+  - - 47
+    - 46
+    - 232
+    - 204
+  - - 48
+    - 47
+    - 232
+    - 204
+  - - 49
+    - 48
+    - 232
+    - 204
+  - - 50
+    - 49
+    - 232
+    - 204
+  - - 51
+    - 50
+    - 232
+    - 204
+  - - 52
+    - 51
+    - 232
+    - 204
+  - - 53
+    - 52
+    - 232
+    - 204
+  - - 54
+    - 53
+    - 232
+    - 204
+  - - 55
+    - 54
+    - 232
+    - 204
+  - - 56
+    - 55
+    - 232
+    - 204
+  - - 57
+    - 56
+    - 232
+    - 204
+  - - 58
+    - 57
+    - 232
+    - 204
+  - - 59
+    - 58
+    - 232
+    - 204
+  - - 60
+    - 59
+    - 232
+    - 204
+  - - 61
+    - 60
+    - 230
+    - 204
+  - - 62
+    - 61
+    - 225
+    - 204
+  - - 63
+    - 62
+    - 221
+    - 205
+  - - 64
+    - 63
+    - 218
+    - 205
+  - - 65
+    - 64
+    - 213
+    - 206
+  - - 66
+    - 65
+    - 210
+    - 206
+  - - 67
+    - 66
+    - 206
+    - 206
+  - - 68
+    - 67
+    - 201
+    - 207
+  - - 69
+    - 68
+    - 197
+    - 207
+  - - 70
+    - 69
+    - 194
+    - 208
+  - - 71
+    - 70
+    - 190
+    - 208
+  - - 72
+    - 71
+    - 185
+    - 209
+  - - 73
+    - 72
+    - 182
+    - 209
+  - - 74
+    - 73
+    - 178
+    - 209
+  - - 75
+    - 74
+    - 174
+    - 210
+  - - 76
+    - 75
+    - 169
+    - 210
+  - - 77
+    - 76
+    - 166
+    - 211
+  - - 78
+    - 77
+    - 161
+    - 211
+  - - 79
+    - 78
+    - 158
+    - 211
+  - - 80
+    - 79
+    - 154
+    - 212
+  - - 81
+    - 80
+    - 150
+    - 212
+  - - 82
+    - 81
+    - 146
+    - 213
+  - - 83
+    - 82
+    - 142
+    - 213
+  - - 84
+    - 83
+    - 138
+    - 214
+  - - 85
+    - 84
+    - 133
+    - 214
+  - - 86
+    - 85
+    - 130
+    - 214
+  - - 87
+    - 86
+    - 126
+    - 215
+  - - 88
+    - 87
+    - 122
+    - 215
+  - - 89
+    - 88
+    - 118
+    - 216
+  - - 90
+    - 89
+    - 114
+    - 216
+  - - 91
+    - 90
+    - 110
+    - 217
+  - - 92
+    - 91
+    - 106
+    - 217
+  - - 93
+    - 92
+    - 102
+    - 217
+  - - 94
+    - 93
+    - 98
+    - 218
+  - - 95
+    - 94
+    - 94
+    - 218
+  - - 96
+    - 95
+    - 90
+    - 219
+  - - 97
+    - 96
+    - 86
+    - 219
+  - - 98
+    - 97
+    - 82
+    - 220
+  - - 99
+    - 98
+    - 78
+    - 220
+  - - 100
+    - 99
+    - 74
+    - 220
+  - - 101
+    - 100
+    - 0
+    - 0
+
+---
+
+rating_types_work_categories:
+  columns:
+  - rating_type_id
+  - work_category_id
+  records: 
+  - - 1
+    - 1
+  - - 2
+    - 1
+  - - 3
+    - 1
+  - - 4
+    - 1
+  - - 5
+    - 1
+  - - 6
+    - 1
+  - - 7
+    - 1
+
+---
+users:
+  columns:
+  - id
+  - name
+  - email
+  - password
+  - created_at
+  - updated_at
+  - surname
+  - picture
+  - about
+  - country
+  - city
+  - zip
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - nickname
+  - provider
+  - uid
+  - confirmation_token
+  - confirmed_at
+  - confirmation_sent_at
+  - unconfirmed_email
+  - tokens
+  records: 
+  - - 1
+    - Solenne
+    - testuser1@testuser.com
+    - 
+    - 2016-04-26 00:54:58.000000000 Z
+    - 2016-04-26 00:54:58.000000000 Z
+    - Bague
+    - avatestuser01.jpg
+    - |-
+      Hello ! I'm Solenne Bague, a graphic designer based in Nice, France.
+      Lover of illustrations, part-time music aficionado, supporter of Editorial Design.
+    - France
+    - Nice
+    - 
+    - "$2a$10$H1yK8truw6jyQp/3Go3ibetKXpfTUS./udj7.Ae9ejIp11sUIMCsi"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - email
+    - testuser1@testuser.com
+    - yqDfLhzgz92A8ZX_7cHJ
+    - 2016-04-26 00:54:58.000000000 Z
+    - 2016-04-26 00:54:58.000000000 Z
+    - 
+    - "{}"
+  - - 2
+    - Timothy
+    - testuser2@testuser.com
+    - 
+    - 2016-04-26 00:55:01.000000000 Z
+    - 2016-04-26 00:55:01.000000000 Z
+    - Hinrichs
+    - avatestuser02.jpg
+    - HHi, I'm an begining Illustrator from the States right now I'm trying to make
+      my masters in Fine Arts. I'm freelancer for any kind of illustrations. feel
+      free to contact me.
+    - USA
+    - Tempe
+    - 
+    - "$2a$10$NnssvOwl/gUXUZyE8GOEgezNNL.eStezkf3IDQf4U0T3h15fSgTca"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - email
+    - testuser2@testuser.com
+    - vx3sZwfY3zawMfmZvsUt
+    - 2016-04-26 00:55:01.000000000 Z
+    - 2016-04-26 00:55:01.000000000 Z
+    - 
+    - "{}"
+  - - 3
+    - Freeman
+    - testuser4@testuser.com
+    - 
+    - 2016-04-26 00:55:04.000000000 Z
+    - 2016-04-26 00:55:04.000000000 Z
+    - Zhang
+    - avatestuser04.jpg
+    - ''
+    - China
+    - Szehzhen
+    - 
+    - "$2a$10$1AZkG7L4RqO9tn/iiTarmeNoU2jns6degexkUvSOd1ABr825ASMge"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - email
+    - testuser4@testuser.com
+    - EFxnefzSyiVKTveCgAzV
+    - 2016-04-26 00:55:04.000000000 Z
+    - 2016-04-26 00:55:04.000000000 Z
+    - 
+    - "{}"
+  - - 4
+    - Victoria
+    - testuser3@testuser3.com
+    - 
+    - 2016-04-26 00:55:07.000000000 Z
+    - 2016-04-26 00:55:07.000000000 Z
+    - Kungorowa
+    - link.jpg
+    - Kreativleitung, Malerei, Bildende Kunst
+    - Ukraine
+    - Poltawa
+    - 
+    - "$2a$10$9gGXN6d8pBFCg6Tw9Yizt.zHkWdKoNOXKXDgLL427FUKfaMepXwjO"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - email
+    - testuser3@testuser3.com
+    - Acmi9HzMaoAWeknu1QLm
+    - 2016-04-26 00:55:07.000000000 Z
+    - 2016-04-26 00:55:07.000000000 Z
+    - 
+    - "{}"
+
+---
+work_categories:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Illustration
+    - 2016-04-26 00:54:57.000000000 Z
+    - 2016-04-26 00:54:57.000000000 Z
+
+---
+works:
+  columns:
+  - id
+  - title
+  - description
+  - created_at
+  - updated_at
+  - url
+  - user_id
+  - picture
+  - work_category_id
+  - is_active
+  - is_visible
+  - focus_id
+  - focu_id
+  records: 
+  - - 1
+    - lighthouse
+    - 
+    - 2016-04-26 00:55:10.000000000 Z
+    - 2016-04-26 00:55:10.000000000 Z
+    - 
+    - 1
+    - test-01.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 2
+  - - 2
+    - sailing boat
+    - 
+    - 2016-04-26 00:55:13.000000000 Z
+    - 2016-04-26 00:55:13.000000000 Z
+    - 
+    - 1
+    - test-02.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 2
+  - - 3
+    - Great work 2
+    - 
+    - 2016-04-26 00:55:16.000000000 Z
+    - 2016-04-26 00:55:16.000000000 Z
+    - 
+    - 1
+    - test-03.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 2
+  - - 4
+    - cobwebs
+    - 
+    - 2016-04-26 00:55:18.000000000 Z
+    - 2016-04-26 00:55:18.000000000 Z
+    - 
+    - 2
+    - test-04.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1
+  - - 5
+    - inside fears
+    - 
+    - 2016-04-26 00:55:21.000000000 Z
+    - 2016-04-26 00:55:21.000000000 Z
+    - 
+    - 2
+    - test-05.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1
+  - - 6
+    - Great work 1
+    - 
+    - 2016-04-26 00:55:23.000000000 Z
+    - 2016-04-26 00:55:23.000000000 Z
+    - 
+    - 4
+    - 10test-09.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 7
+    - Great work 2
+    - 
+    - 2016-04-26 00:55:26.000000000 Z
+    - 2016-04-26 00:55:26.000000000 Z
+    - 
+    - 4
+    - test-08.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 8
+    - Great work 3
+    - 
+    - 2016-04-26 00:55:29.000000000 Z
+    - 2016-04-26 00:55:29.000000000 Z
+    - 
+    - 4
+    - test-14.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 9
+    - Great work 4
+    - 
+    - 2016-04-26 00:55:33.000000000 Z
+    - 2016-04-26 00:55:33.000000000 Z
+    - 
+    - 4
+    - test-13.jpg
+    - 1
+    - false
+    - true
+    - 
+    - 3
+  - - 10
+    - the road to Xinhoa
+    - 
+    - 2016-04-26 00:55:36.000000000 Z
+    - 2016-04-26 00:55:36.000000000 Z
+    - 
+    - 3
+    - test-06.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1

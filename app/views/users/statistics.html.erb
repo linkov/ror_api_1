@@ -1,0 +1,147 @@
+<script>
+
+  $(document).ready(function(){
+
+
+    console.log("load");
+
+    $('.stats-work-container').css("position","relative");
+    $('.stats-work-container').each(function () {
+
+      new IScroll( $(this).get(0) );
+    });
+
+    $('.stats-feedback-scroller-container').css("position","relative");
+    $('.stats-feedback-scroller-container').each(function () {
+
+      new IScroll( $(this).get(0), { scrollX: true, scrollY: false,click: true } );
+    });
+
+
+    $(".scroller-user-content").click(function(event) {
+      event.stopImmediatePropagation();
+      var user_id = $(this).attr("id");
+      console.log(user_id);
+      $(this).children(".hidden-user-related-ratings").first().show()
+
+      swal({
+            title:"<span class='glyphicon glyphicon glyphicon-info-sign' aria-hidden='true'></span>",
+            html:true,
+            text:$(this).children(".hidden-user-related-ratings").html()
+          },
+          function(){
+
+            $(".hidden-user-related-ratings").hide()
+          }
+      );
+
+
+
+    });
+
+    $(".stats-turn-off-work-container").one('click',function(event) {
+      event.stopImmediatePropagation();
+
+      $(this).parent().parent().slideUp();
+      var work_id = $(this).attr("id");
+      var url = "/works/"+work_id+"/hidework";
+      jQuery.post( url );
+    });
+
+
+
+  });
+
+
+</script>
+
+<div id="stats-container">
+<div class="row">
+
+  <div class="col-md-12" id="overall-stats">
+
+    <table class="table table-condensed table-borderless">
+
+      <tr>
+        <% @ratecolor = Ratecolor.find_by_rating(@score) %>
+        <td class="rating-average-td">
+          <h4 class="rating-average" style="background-color:rgba(<%= @ratecolor.red %>,<%= @ratecolor.green %>,0,1);"><%= @score %></h4>
+        </td>
+        <td class="rating-slider-td">
+          <div class="progress progress-work-container">
+            <span class="label label-default" style="position: absolute; float: left;text-align: center;">Overall</span>
+          <div class="rating-slider-passive-container" style="width:<%= @score %>%">
+            <div class="ui-slider-horizontal"></div>
+          </div>
+            </div>
+        </td>
+
+
+        <td class="rating-timestat-td">
+          <h4>2013</h4>
+        </td>
+
+
+        <td class="rating-timestat-td">
+          <h4>2014</h4>
+        </td>
+
+      </tr>
+
+      <% @allallratingscategories.all.each do |category| %>
+          <tr>
+
+            <%
+              @rr = Rating.where(:rating_type_id => category.id,:id => @allallratingids);
+
+
+              @average_score =  @rr.collect(&:score).sum.to_f/@rr.length if @rr.length > 0;
+              @average_score = @average_score.round;
+              @ratecolor = Ratecolor.find_by_rating(@average_score);
+
+
+            %>
+            <td class="rating-average-td">
+            <h4 class="rating-average"  style="background-color:rgba(<%= @ratecolor.red %>,<%= @ratecolor.green %>,0,1);"><%=  @average_score %>
+            </h4>
+            </td>
+
+            <td class="rating-slider-td">
+
+              <div class="progress progress-work-container">
+                <span class="label label-default rating-label" style="position: absolute; float: left;text-align: center;"><%= category.name %></span>
+              <div class="rating-slider-passive-container" style="width:<%= @average_score %>%">
+              <div class="ui-slider-horizontal"></div>
+                </div>
+            </div>
+            </td>
+
+            <td class="rating-timestat-td">
+              <h4>2013</h4>
+            </td>
+
+
+            <td class="rating-timestat-td">
+              <h4>2014</h4>
+            </td>
+
+          </tr>
+      <% end %>
+    </table>
+
+  </div>
+</div>
+
+
+
+
+<div class="col-md-12" id="overall-stats-works">
+  <% if @works.any? %>
+
+      <ol class="works">
+
+        <%= render partial: "works/statisticswork", collection: @works.where(:is_visible => true) %>
+      </ol>
+  <% end %>
+</div>
+</div>

@@ -1,0 +1,59 @@
+.efw-stats-grid {
+    margin: 0 auto;
+
+    .efw-stats-item {
+
+      .stats-image-container {
+
+        width: 245px;
+        height: 245px;
+        margin-top: 14px;
+        position: relative;
+
+        .stats-grid-item-container {
+          background-size: contain;
+          background-position: center center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 225px;
+          height: 225px;
+          margin: auto auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+
+              img {
+                object-fit: contain;
+              }
+          }
+
+          .stats-grid-item-container-testawork {
+            filter:
+                  drop-shadow(2px 2px 0 darkgrey)
+                  drop-shadow(4px 4px 0 lightgray);
+          }
+      }
+
+
+      .stats-info-container {
+        height: 86px;
+        width: 245px;
+      }
+
+
+
+
+
+      margin-bottom: 14px;
+      width: 245px;
+      height: 350px;
+      // border: 1px solid black;
+
+
+
+
+    }
+
+}

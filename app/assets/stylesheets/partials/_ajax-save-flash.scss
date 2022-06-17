@@ -1,0 +1,29 @@
+
+.flash-success {
+  -moz-animation: flash-success 1s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash-success 1s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+  -ms-animation: flash-success 1s ease-out;
+  -ms-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes flash-success {
+  0% { background-color: none; }
+  50% { background-color: limegreen; }
+  100% { background-color: none; }
+}
+
+@-moz-keyframes flash-success {
+  0% { background-color: none; }
+  50% { background-color: limegreen; }
+  100% { background-color: none; }
+}
+
+@-ms-keyframes flash-success {
+  0% { background-color: none; }
+  50% { background-color: limegreen; }
+  100% { background-color: none; }
+}

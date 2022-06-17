@@ -1,0 +1,1582 @@
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - "$2a$10$lYxSmX97SofiIZXzGAakcenspW.8teKuxv2DOyOwYHF5CrO.ppQBC"
+    - 
+    - 
+    - 
+    - 5
+    - 2016-04-26 11:11:28.000000000 Z
+    - 2016-04-25 23:06:29.000000000 Z
+    - 95.91.213.88
+    - 95.91.213.88
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-26 11:11:28.000000000 Z
+
+---
+focus:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  - code
+  records: 
+  - - 1
+    - Technique
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - technique
+  - - 2
+    - Emotion
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - emotion
+  - - 3
+    - Idea
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - idea
+
+---
+rate_levels:
+  columns:
+  - id
+  - value
+  - created_at
+  - updated_at
+  - code
+  records:
+  - - 1
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - beginner
+  - - 2
+    - 2
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - intermediate
+  - - 3
+    - 3
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+    - pro
+
+---
+rating_types:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  - focu_id
+  - parent_id
+  - ancestry
+  - position
+  - code
+  records:
+  - - 1
+    - Technical Quality of composition
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 19:04:11.000000000 Z
+    - 1
+    -
+    -
+    - 0
+    - tech_q_comp
+  - - 2
+    - Intuitive aspects of the composition
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:23:54.000000000 Z
+    - 2
+    -
+    -
+    - 36
+    - emo_aspects
+  - - 3
+    - Intellectual aspects of the Composition
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:51:42.000000000 Z
+    - 3
+    -
+    -
+    - 45
+    - How conclusive is the image at its implementation?
+  - - 4
+    - Principles of organization of composition
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - '1'
+    - 1
+    - ''
+  - - 5
+    - Background
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 20
+    -
+  - - 6
+    - Background character framing
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13/5
+    - 21
+    -
+  - - 7
+    - Background main dramaturgy
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13/5
+    - 22
+    -
+  - - 8
+    - 'Picture format '
+    - 2016-04-25 19:04:01.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - 1/4
+    - 2
+    - pic_format
+  - - 9
+    - Perspective
+    - 2016-04-25 19:04:37.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - 1/4
+    - 3
+    - persp
+  - - 10
+    - Unrealistic perspective
+    - 2016-04-25 19:06:47.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - 1/4/9
+    - 4
+    - unreal_persp
+  - - 11
+    - choice of viewpoint & direction of Perception
+    - 2016-04-25 19:09:44.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - 1/4
+    - 5
+    - viewp_percep
+  - - 12
+    - Optical Illusions
+    - 2016-04-25 19:10:39.000000000 Z
+    - 2016-04-25 19:11:48.000000000 Z
+    - 1
+    -
+    - 1/4
+    - 6
+    - opt_illu
+  - - 13
+    - Compositional techniques
+    - 2016-04-25 19:11:19.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - '1'
+    - 7
+    - comp_tech
+  - - 14
+    - Effect of objects in the image / Space
+    - 2016-04-25 19:12:58.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 8
+    - effect_obj_img
+  - - 15
+    - Chiaroscuro composition
+    - 2016-04-25 19:13:53.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 9
+    - chia_comp
+  - - 16
+    - color composition
+    - 2016-04-25 19:15:02.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 10
+    - col_comp
+  - - 17
+    - image dynamics
+    - 2016-04-25 19:16:26.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 11
+    - img_dyn
+  - - 18
+    - Monotone coloration
+    - 2016-04-25 19:17:27.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13/17
+    - 12
+    - mon_color
+  - - 19
+    - Geometry, aesthetics and symmetry
+    - 2016-04-25 19:18:56.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 13
+    - geo_aes_sym
+  - - 20
+    - Composition / statics and dynamics
+    - 2016-04-25 19:19:53.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 14
+    - cemp_stat_dyn
+  - - 21
+    - Color / space / image segmentation
+    - 2016-04-25 19:21:17.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 15
+    - col_spa_segm
+  - - 22
+    - Inconsistent Use of Color / space / image segmentation
+    - 2016-04-25 19:22:28.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13/21
+    - 16
+    - incon_col_spa_segm
+  - - 23
+    - Simplification
+    - 2016-04-25 19:23:51.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 17
+    - simpl
+  - - 24
+    - Shallow
+    - 2016-04-25 19:24:19.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 18
+    - shal
+  - - 25
+    - Depth of field / Exposure focus/sharpness
+    - 2016-04-25 19:25:35.000000000 Z
+    - 2016-04-25 19:26:00.000000000 Z
+    - 1
+    -
+    - 1/13
+    - 19
+    - dep_exp_sharp
+  - - 26
+    - Design elements of composition
+    - 2016-04-25 19:27:26.000000000 Z
+    - 2016-04-25 19:27:35.000000000 Z
+    - 1
+    -
+    - '1'
+    - 23
+    - des_elem_comp
+  - - 27
+    - Point
+    - 2016-04-25 19:28:04.000000000 Z
+    - 2016-04-25 19:31:41.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 24
+    - Point
+  - - 28
+    - 'Points, Lines and shapes '
+    - 2016-04-25 19:29:47.000000000 Z
+    - 2016-04-25 19:31:43.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 25
+    - point_line_shape
+  - - 29
+    - Plasticity / 3D effect of objects
+    - 2016-04-25 19:31:32.000000000 Z
+    - 2016-04-25 19:31:45.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 26
+    - plast_3d_obj
+  - - 30
+    - spatial depth
+    - 2016-04-25 19:33:15.000000000 Z
+    - 2016-04-25 19:36:53.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 27
+    - spa_dep
+  - - 31
+    - Structure, ornaments and symbols
+    - 2016-04-25 19:34:52.000000000 Z
+    - 2016-04-25 19:36:55.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 28
+    - struc_orna_symb
+  - - 32
+    - Interstices / negative-positive forms
+    - 2016-04-25 19:35:54.000000000 Z
+    - 2016-04-25 19:36:57.000000000 Z
+    - 1
+    -
+    - 1/26
+    - 29
+    - int_neg_pos_forms
+  - - 33
+    - Use of Light and Colour
+    - 2016-04-25 19:36:42.000000000 Z
+    - 2016-04-25 19:40:58.000000000 Z
+    - 1
+    -
+    - '1'
+    - 30
+    - use_light_col
+  - - 34
+    - Lighting / light
+    - 2016-04-25 19:37:39.000000000 Z
+    - 2016-04-25 19:41:23.000000000 Z
+    - 1
+    -
+    - 1/33
+    - 31
+    - light
+  - - 35
+    - Color and chiaroscuro value / transitions
+    - 2016-04-25 19:39:48.000000000 Z
+    - 2016-04-25 19:41:24.000000000 Z
+    - 1
+    -
+    - 1/33
+    - 32
+    - col_chia_value
+  - - 36
+    - Color - Image mood
+    - 2016-04-25 19:42:47.000000000 Z
+    - 2016-04-25 19:45:41.000000000 Z
+    - 1
+    -
+    - 1/33
+    - 33
+    - col_img_mood
+  - - 37
+    - Color / Local Color / modeling
+    - 2016-04-25 19:44:04.000000000 Z
+    - 2016-04-25 19:45:43.000000000 Z
+    - 1
+    -
+    - 1/33
+    - 34
+    - col_local_mod
+  - - 38
+    - Contrast, Saturation - intensive colors
+    - 2016-04-25 19:45:32.000000000 Z
+    - 2016-04-25 19:45:45.000000000 Z
+    - 1
+    -
+    - 1/33
+    - 35
+    - cont_sat_int_col
+  - - 39
+    - 'visual impact     '
+    - 2016-04-25 19:46:16.000000000 Z
+    - 2016-04-25 20:24:10.000000000 Z
+    - 2
+    -
+    - '2'
+    - 37
+    - vis_imp
+  - - 40
+    - 'Visual Wow Effect    '
+    - 2016-04-25 19:46:52.000000000 Z
+    - 2016-04-25 20:22:38.000000000 Z
+    - 1
+    -
+    - 2/39
+    - 38
+    - vis_wow_eff
+  - - 41
+    - The moment
+    - 2016-04-25 19:48:02.000000000 Z
+    - 2016-04-25 20:24:36.000000000 Z
+    - 2
+    -
+    - 2/39
+    - 39
+    - mom
+  - - 42
+    - 'emotional impact  '
+    - 2016-04-25 19:48:26.000000000 Z
+    - 2016-04-25 20:24:57.000000000 Z
+    - 2
+    -
+    - '2'
+    - 40
+    - emo_imp
+  - - 43
+    - 'Emotion  '
+    - 2016-04-25 19:48:42.000000000 Z
+    - 2016-04-25 20:29:42.000000000 Z
+    - 2
+    -
+    - 2/42
+    - 41
+    - emo
+  - - 44
+    - Contradictory emotional interest
+    - 2016-04-25 19:49:32.000000000 Z
+    - 2016-04-25 20:29:58.000000000 Z
+    - 2
+    -
+    - 2/42/43
+    - 42
+    - cont_emo_int
+  - - 45
+    - Feeling
+    - 2016-04-25 19:49:52.000000000 Z
+    - 2016-04-25 20:30:35.000000000 Z
+    - 2
+    -
+    - 2/42
+    - 44
+    - feel
+  - - 46
+    - Mood
+    - 2016-04-25 19:51:58.000000000 Z
+    - 2016-04-25 20:30:23.000000000 Z
+    - 2
+    -
+    - 2/42
+    - 43
+    - mood
+  - - 47
+    - concept
+    - 2016-04-25 19:53:32.000000000 Z
+    - 2016-04-25 20:28:21.000000000 Z
+    - 3
+    -
+    - 3/48
+    - 47
+    - con
+  - - 48
+    - execution of the idea - perfection
+    - 2016-04-25 19:54:22.000000000 Z
+    - 2016-04-25 20:28:33.000000000 Z
+    - 3
+    -
+    - '3'
+    - 46
+    - exe_idea_perf
+  - - 49
+    - Medium
+    - 2016-04-25 19:55:52.000000000 Z
+    - 2016-04-25 20:27:48.000000000 Z
+    - 3
+    -
+    - 3/48
+    - 50
+    - med
+  - - 50
+    - subjective Relevance / interpretation
+    - 2016-04-25 19:56:25.000000000 Z
+    - 2016-04-25 20:28:09.000000000 Z
+    - 3
+    -
+    - 3/48/47
+    - 48
+    - subj_rel_interp
+  - - 51
+    - bad execution of idea - imperfection
+    - 2016-04-25 19:58:45.000000000 Z
+    - 2016-04-25 20:27:58.000000000 Z
+    - 3
+    -
+    - 3/48/47
+    - 49
+    - bad_exe_imperf
+  - - 52
+    - experimentation
+    - 2016-04-25 20:02:05.000000000 Z
+    - 2016-04-25 20:27:35.000000000 Z
+    - 3
+    -
+    - '3'
+    - 51
+    - exp
+  - - 53
+    - Genius
+    - 2016-04-25 20:02:29.000000000 Z
+    - 2016-04-25 20:27:18.000000000 Z
+    - 3
+    -
+    - '3'
+    - 52
+    - genius
+  - - 54
+    - Distinctness of picture statement / information
+    - 2016-04-25 20:03:38.000000000 Z
+    - 2016-04-25 20:26:59.000000000 Z
+    - 3
+    -
+    - 3/53
+    - 53
+    - dist_stat_info
+  - - 55
+    - 'Originality  '
+    - 2016-04-25 20:04:17.000000000 Z
+    - 2016-04-25 20:26:47.000000000 Z
+    - 3
+    -
+    - 3/53
+    - 54
+    - orig
+  - - 56
+    - Context
+    - 2016-04-25 20:04:38.000000000 Z
+    - 2016-04-25 20:26:34.000000000 Z
+    - 3
+    -
+    - 3/53
+    - 55
+    - context
+  - - 57
+    - authenticity
+    - 2016-04-25 20:05:13.000000000 Z
+    - 2016-04-25 20:26:22.000000000 Z
+    - 3
+    -
+    - 3/53
+    - 56
+    - authent
+  - - 58
+    - intellectual impact
+    - 2016-04-25 20:12:36.000000000 Z
+    - 2016-04-25 20:26:11.000000000 Z
+    - 3
+    -
+    - '3'
+    - 57
+    - intel_imp
+  - - 59
+    - Abstraction ability of the artist
+    - 2016-04-25 20:13:17.000000000 Z
+    - 2016-04-25 20:25:57.000000000 Z
+    - 3
+    -
+    - 3/58
+    - 58
+    - abstact_artist
+  - - 60
+    - Denotative and connotative content
+    - 2016-04-25 20:19:13.000000000 Z
+    - 2016-04-25 20:25:42.000000000 Z
+    - 3
+    -
+    - 3/58
+    - 59
+    - den_con_content
+  - - 61
+    - 'symbolism, metaphor   '
+    - 2016-04-25 20:20:12.000000000 Z
+    - 2016-04-25 20:25:29.000000000 Z
+    - 3
+    -
+    - 3/58
+    - 60
+    - symb_meta
+  - - 62
+    - Meaning, studium and punctum
+    - 2016-04-25 20:20:47.000000000 Z
+    - 2016-04-25 20:25:16.000000000 Z
+    - 3
+    -
+    - 3/58
+    - 61
+    - mean_stud_punc
+  - - 63
+    - Picture Presentation / utensils
+    - 2016-04-25 20:21:21.000000000 Z
+    - 2016-04-25 20:23:37.000000000 Z
+    - 3
+    -
+    - '3'
+    - 62
+    - pic_pres_ut
+  - - 64
+    - The funny questions
+    - 2016-04-25 20:23:10.000000000 Z
+    - 2016-04-25 20:23:30.000000000 Z
+    - 3
+    -
+    - '3'
+    - 63
+    - fun_quest
+
+---
+questions:
+  columns:
+  - id
+  - title
+  - rating_type_id
+  - rate_level_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - How do you like the realization of the Artwork?
+    - 1
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:42:53.000000000 Z
+  - - 2
+    - What is your emotional overall impression of the artwork?
+    - 39
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:50:00.000000000 Z
+  - - 3
+    - How conclusive is the image at its implementation?
+    - 3
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:52:36.000000000 Z
+  - - 4
+    - How coherent and interesting is the Artwork?
+    - 4
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:54:05.000000000 Z
+  - - 5
+    - How well fit the picture background and foreground together?
+    - 5
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:55:59.000000000 Z
+  - - 6
+    - Which effect has the conscious inconsistency between foreground and background
+      on you?
+    - 6
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:39:25.000000000 Z
+  - - 7
+    - How useful complements the background the narrative in the foreground?
+    - 7
+    - 1
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 20:33:06.000000000 Z
+  - - 8
+    - Which kind of feeling do you have watching the picture?
+    - 2
+    - 1
+    - 2016-04-25 20:45:21.000000000 Z
+    - 2016-04-25 20:45:21.000000000 Z
+  - - 9
+    - How do you like the graphical effect of shallow within this Artwork?
+    - 24
+    - 1
+    - 2016-04-25 21:01:21.000000000 Z
+    - 2016-04-25 21:01:21.000000000 Z
+
+---
+ratecolors:
+  columns:
+  - id
+  - rating
+  - red
+  - green
+  records: 
+  - - 1
+    - 0
+    - 204
+    - 2
+  - - 2
+    - 1
+    - 205
+    - 7
+  - - 3
+    - 2
+    - 205
+    - 13
+  - - 4
+    - 3
+    - 206
+    - 18
+  - - 5
+    - 4
+    - 207
+    - 23
+  - - 6
+    - 5
+    - 208
+    - 29
+  - - 7
+    - 6
+    - 208
+    - 34
+  - - 8
+    - 7
+    - 209
+    - 40
+  - - 9
+    - 8
+    - 210
+    - 46
+  - - 10
+    - 9
+    - 211
+    - 52
+  - - 11
+    - 10
+    - 211
+    - 57
+  - - 12
+    - 11
+    - 212
+    - 63
+  - - 13
+    - 12
+    - 213
+    - 68
+  - - 14
+    - 13
+    - 214
+    - 73
+  - - 15
+    - 14
+    - 215
+    - 79
+  - - 16
+    - 15
+    - 215
+    - 84
+  - - 17
+    - 16
+    - 216
+    - 90
+  - - 18
+    - 17
+    - 217
+    - 96
+  - - 19
+    - 18
+    - 218
+    - 102
+  - - 20
+    - 19
+    - 218
+    - 107
+  - - 21
+    - 20
+    - 219
+    - 112
+  - - 22
+    - 21
+    - 220
+    - 118
+  - - 23
+    - 22
+    - 221
+    - 123
+  - - 24
+    - 23
+    - 221
+    - 129
+  - - 25
+    - 24
+    - 222
+    - 134
+  - - 26
+    - 25
+    - 223
+    - 141
+  - - 27
+    - 26
+    - 224
+    - 146
+  - - 28
+    - 27
+    - 224
+    - 152
+  - - 29
+    - 28
+    - 225
+    - 157
+  - - 30
+    - 29
+    - 226
+    - 162
+  - - 31
+    - 30
+    - 227
+    - 168
+  - - 32
+    - 31
+    - 227
+    - 173
+  - - 33
+    - 32
+    - 228
+    - 179
+  - - 34
+    - 33
+    - 229
+    - 185
+  - - 35
+    - 34
+    - 230
+    - 190
+  - - 36
+    - 35
+    - 230
+    - 196
+  - - 37
+    - 36
+    - 231
+    - 201
+  - - 38
+    - 37
+    - 232
+    - 204
+  - - 39
+    - 38
+    - 232
+    - 204
+  - - 40
+    - 39
+    - 232
+    - 204
+  - - 41
+    - 40
+    - 232
+    - 204
+  - - 42
+    - 41
+    - 232
+    - 204
+  - - 43
+    - 42
+    - 232
+    - 204
+  - - 44
+    - 43
+    - 232
+    - 204
+  - - 45
+    - 44
+    - 232
+    - 204
+  - - 46
+    - 45
+    - 232
+    - 204
+  - - 47
+    - 46
+    - 232
+    - 204
+  - - 48
+    - 47
+    - 232
+    - 204
+  - - 49
+    - 48
+    - 232
+    - 204
+  - - 50
+    - 49
+    - 232
+    - 204
+  - - 51
+    - 50
+    - 232
+    - 204
+  - - 52
+    - 51
+    - 232
+    - 204
+  - - 53
+    - 52
+    - 232
+    - 204
+  - - 54
+    - 53
+    - 232
+    - 204
+  - - 55
+    - 54
+    - 232
+    - 204
+  - - 56
+    - 55
+    - 232
+    - 204
+  - - 57
+    - 56
+    - 232
+    - 204
+  - - 58
+    - 57
+    - 232
+    - 204
+  - - 59
+    - 58
+    - 232
+    - 204
+  - - 60
+    - 59
+    - 232
+    - 204
+  - - 61
+    - 60
+    - 230
+    - 204
+  - - 62
+    - 61
+    - 225
+    - 204
+  - - 63
+    - 62
+    - 221
+    - 205
+  - - 64
+    - 63
+    - 218
+    - 205
+  - - 65
+    - 64
+    - 213
+    - 206
+  - - 66
+    - 65
+    - 210
+    - 206
+  - - 67
+    - 66
+    - 206
+    - 206
+  - - 68
+    - 67
+    - 201
+    - 207
+  - - 69
+    - 68
+    - 197
+    - 207
+  - - 70
+    - 69
+    - 194
+    - 208
+  - - 71
+    - 70
+    - 190
+    - 208
+  - - 72
+    - 71
+    - 185
+    - 209
+  - - 73
+    - 72
+    - 182
+    - 209
+  - - 74
+    - 73
+    - 178
+    - 209
+  - - 75
+    - 74
+    - 174
+    - 210
+  - - 76
+    - 75
+    - 169
+    - 210
+  - - 77
+    - 76
+    - 166
+    - 211
+  - - 78
+    - 77
+    - 161
+    - 211
+  - - 79
+    - 78
+    - 158
+    - 211
+  - - 80
+    - 79
+    - 154
+    - 212
+  - - 81
+    - 80
+    - 150
+    - 212
+  - - 82
+    - 81
+    - 146
+    - 213
+  - - 83
+    - 82
+    - 142
+    - 213
+  - - 84
+    - 83
+    - 138
+    - 214
+  - - 85
+    - 84
+    - 133
+    - 214
+  - - 86
+    - 85
+    - 130
+    - 214
+  - - 87
+    - 86
+    - 126
+    - 215
+  - - 88
+    - 87
+    - 122
+    - 215
+  - - 89
+    - 88
+    - 118
+    - 216
+  - - 90
+    - 89
+    - 114
+    - 216
+  - - 91
+    - 90
+    - 110
+    - 217
+  - - 92
+    - 91
+    - 106
+    - 217
+  - - 93
+    - 92
+    - 102
+    - 217
+  - - 94
+    - 93
+    - 98
+    - 218
+  - - 95
+    - 94
+    - 94
+    - 218
+  - - 96
+    - 95
+    - 90
+    - 219
+  - - 97
+    - 96
+    - 86
+    - 219
+  - - 98
+    - 97
+    - 82
+    - 220
+  - - 99
+    - 98
+    - 78
+    - 220
+  - - 100
+    - 99
+    - 74
+    - 220
+  - - 101
+    - 100
+    - 0
+    - 0
+
+---
+rating_types_work_categories:
+  columns:
+  - rating_type_id
+  - work_category_id
+  records: 
+  - - 1
+    - 1
+  - - 2
+    - 1
+  - - 3
+    - 1
+  - - 4
+    - 1
+  - - 5
+    - 1
+  - - 6
+    - 1
+  - - 7
+    - 1
+
+---
+users:
+  columns:
+  - id
+  - name
+  - email
+  - password
+  - created_at
+  - updated_at
+  - surname
+  - picture
+  - about
+  - country
+  - city
+  - zip
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - nickname
+  - provider
+  - uid
+  - confirmation_token
+  - confirmed_at
+  - confirmation_sent_at
+  - unconfirmed_email
+  - tokens
+  records:
+  - - 1
+    - Solenne
+    - testuser1@testuser.com
+    -
+    - 2016-04-25 03:55:38.000000000 Z
+    - 2016-04-25 21:06:58.000000000 Z
+    - Bague
+    - avatestuser01.jpg
+    - |-
+      Hello ! I'm Solenne Bague, a graphic designer based in Nice, France.
+      Lover of illustrations, part-time music aficionado, supporter of Editorial Design.
+    - France
+    - Nice
+    -
+    - "$2a$10$CQ3xzOkVdhyD99854gJ4..raRw1pM9dT5G7r5hNUNPFYAljzmNWBK"
+    -
+    -
+    -
+    - 5
+    - 2016-04-25 21:03:53.000000000 Z
+    - 2016-04-25 20:57:41.000000000 Z
+    - 92.72.220.112
+    - 92.72.220.112
+    -
+    - email
+    - testuser1@testuser.com
+    - Yr6WgLKu9KTDt1Jm715p
+    - 2016-04-25 03:55:38.000000000 Z
+    - 2016-04-25 03:55:38.000000000 Z
+    -
+    - '{"HeaCFi8aY7Ep0XuQwyUshg":{"token":"$2a$10$J0kfBeH7wBDSMPJWJ06S6.mpC/MBD5zFipiF5BCg9DhmnlH00S3Ea","expiry":1462827999,"last_token":null,"updated_at":"2016-04-25T21:06:39.371+00:00"},"WC_HCAI1iWpPHK9yCI0uQA":{"token":"$2a$10$PAgD.wyuE1vY7CT.YVCdpOj8ZHRLAXaB6eF8FlIoAXhKn.TUZrpES","expiry":1462827999,"last_token":null,"updated_at":"2016-04-25T21:06:39.523+00:00"},"QyG6vkhwRYpxX0USTlR-Uw":{"token":"$2a$10$YL78BGJlXb5Y33/DaZj8Iuf9Jemho0NbLQ251iAeI7dezt0VKv42e","expiry":1462828010,"last_token":null,"updated_at":"2016-04-25T21:06:50.766+00:00"},"7fPti9CANrLavnjyiSr0uA":{"token":"$2a$10$E0L6i7VNhNx7Y1Pt6nqzI.YuLgf22uMBDHzDIYqWVbB64NMXQQO9a","expiry":1462828010,"last_token":null,"updated_at":"2016-04-25T21:06:50.929+00:00"},"FHEpVdSnhodMVqtVc07ySw":{"token":"$2a$10$2r1wMmojtz3WqXdzBu1iPulmBDxaC1Cd5qPnZzT3Y8yA3qKUwMVta","expiry":1462828011,"last_token":null,"updated_at":"2016-04-25T21:06:51.258+00:00"},"kUCfOPjmIqxCOvFfvQTUYg":{"token":"$2a$10$6W.UvmW1WUfLJMGhfZbcjuZniZSHO3s7rJyN4fJ2MTIx4lTckF7N6","expiry":1462828011,"last_token":null,"updated_at":"2016-04-25T21:06:51.528+00:00"},"3doBu_UMyIWhN5Kl2PtxQw":{"token":"$2a$10$QEOE/ymKd5zrCQfZbXNkJe09SAdv8RhCFLdnEI2hZsVu6qOJAy5Mq","expiry":1462828017,"last_token":null,"updated_at":"2016-04-25T21:06:57.200+00:00"},"4mUx3VpJ6If2P7ib29mwqg":{"token":"$2a$10$HiSZ95qHOSKr.G2U.y.KbOC/ZHlLowa6yilgfl/Uk3fo4cQcMCqfK","expiry":1462828017,"last_token":null,"updated_at":"2016-04-25T21:06:57.464+00:00"},"zWDJwjHkQNTMT9kphdLxwg":{"token":"$2a$10$fncmZMaC3fYneuxoBVr99.x5NNmElrMrQ7pOJE9vJleXYz4z/v8g.","expiry":1462828017,"last_token":null,"updated_at":"2016-04-25T21:06:57.758+00:00"},"My-3HVEs8FFXwlpiMU-yPg":{"token":"$2a$10$tEXb9JKvxE9jseYfJsu//OQ.ZlXjORp/6GBv/1Byn7dgShrd2aMgi","expiry":1462828018,"last_token":null,"updated_at":"2016-04-25T21:06:58.071+00:00"}}'
+  - - 2
+    - Timothy
+    - testuser2@testuser.com
+    -
+    - 2016-04-25 03:55:41.000000000 Z
+    - 2016-04-25 03:55:41.000000000 Z
+    - Hinrichs
+    - avatestuser02.jpg
+    - HHi, I'm an begining Illustrator from the States right now I'm trying to make
+      my masters in Fine Arts. I'm freelancer for any kind of illustrations. feel
+      free to contact me.
+    - USA
+    - Tempe
+    -
+    - "$2a$10$QMNwFzJ6jd4cd5Nj1ZzW6.DuIgIIK4G9Ha9pf9U2XQFiWDDrqC6oK"
+    -
+    -
+    -
+    - 0
+    -
+    -
+    -
+    -
+    -
+    - email
+    - testuser2@testuser.com
+    - bcszdyo7XoPNzzUxksQG
+    - 2016-04-25 03:55:41.000000000 Z
+    - 2016-04-25 03:55:41.000000000 Z
+    -
+    - "{}"
+  - - 3
+    - Freeman
+    - testuser4@testuser.com
+    -
+    - 2016-04-25 03:55:44.000000000 Z
+    - 2016-04-25 03:55:44.000000000 Z
+    - Zhang
+    - avatestuser04.jpg
+    - ''
+    - China
+    - Szehzhen
+    -
+    - "$2a$10$rRgDRIkA843mG6u5ecuE1.U/MfluhHVaXKWK//n.R.NCHZhTyYaTS"
+    -
+    -
+    -
+    - 0
+    -
+    -
+    -
+    -
+    -
+    - email
+    - testuser4@testuser.com
+    - 7kr-oaJmjuHLmKw1-j14
+    - 2016-04-25 03:55:44.000000000 Z
+    - 2016-04-25 03:55:44.000000000 Z
+    -
+    - "{}"
+  - - 4
+    - Victoria
+    - testuser3@testuser3.com
+    -
+    - 2016-04-25 03:55:48.000000000 Z
+    - 2016-04-25 03:55:48.000000000 Z
+    - Kungorowa
+    - link.jpg
+    - Kreativleitung, Malerei, Bildende Kunst
+    - Ukraine
+    - Poltawa
+    -
+    - "$2a$10$k6avTajWPUp22lo9QO1smu2clAIsS4OJcixluYhwdtHNUELfDh9pK"
+    -
+    -
+    -
+    - 0
+    -
+    -
+    -
+    -
+    -
+    - email
+    - testuser3@testuser3.com
+    - ZQg8UACaAL73ipHK2ztM
+    - 2016-04-25 03:55:48.000000000 Z
+    - 2016-04-25 03:55:48.000000000 Z
+    -
+    - "{}"
+
+---
+ratings:
+  columns:
+  - id
+  - score
+  - work_id
+  - created_at
+  - updated_at
+  - author_id
+  - question_id
+  records: 
+  - - 9
+    - 70
+    - 7
+    - 2016-04-25 21:05:55.000000000 Z
+    - 2016-04-25 21:05:55.000000000 Z
+    - 1
+    - 1
+  - - 10
+    - 62
+    - 7
+    - 2016-04-25 21:06:18.000000000 Z
+    - 2016-04-25 21:06:18.000000000 Z
+    - 1
+    - 4
+  - - 11
+    - 74
+    - 7
+    - 2016-04-25 21:06:29.000000000 Z
+    - 2016-04-25 21:06:29.000000000 Z
+    - 1
+    - 8
+  - - 12
+    - 75
+    - 7
+    - 2016-04-25 21:06:39.000000000 Z
+    - 2016-04-25 21:06:39.000000000 Z
+    - 1
+    - 2
+  - - 13
+    - 58
+    - 7
+    - 2016-04-25 21:06:50.000000000 Z
+    - 2016-04-25 21:06:50.000000000 Z
+    - 1
+    - 3
+
+---
+settings:
+  columns:
+  - id
+  - title
+  - value
+  - code
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - L1 Switch Average Rating Level
+    - '60'
+    - l1_switch_average_rating_level
+    - 2016-04-26 01:37:52.000000000 Z
+    - 2016-04-26 01:37:52.000000000 Z
+  - - 2
+    - L1 Switch N Of Users Considered
+    - '2'
+    - l1_switch_n_users_considered
+    - 2016-04-26 01:40:52.000000000 Z
+    - 2016-04-26 01:40:52.000000000 Z
+
+---
+work_categories:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Illustration
+    - 2016-04-25 03:55:37.000000000 Z
+    - 2016-04-25 03:55:37.000000000 Z
+
+---
+works:
+  columns:
+  - id
+  - title
+  - description
+  - created_at
+  - updated_at
+  - url
+  - user_id
+  - picture
+  - work_category_id
+  - is_active
+  - is_visible
+  - focus_id
+  - focu_id
+  records: 
+  - - 1
+    - lighthouse
+    - 
+    - 2016-04-25 03:55:52.000000000 Z
+    - 2016-04-25 03:55:52.000000000 Z
+    - 
+    - 1
+    - test-01.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 2
+  - - 2
+    - sailing boat
+    - 
+    - 2016-04-25 03:55:55.000000000 Z
+    - 2016-04-25 03:55:55.000000000 Z
+    - 
+    - 1
+    - test-02.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 2
+  - - 3
+    - Great work 2
+    - ''
+    - 2016-04-25 03:55:58.000000000 Z
+    - 2016-04-25 04:11:22.000000000 Z
+    - ''
+    - 1
+    - test-03.jpg
+    - 1
+    - true
+    - true
+    - 
+    - 2
+  - - 4
+    - cobwebs
+    - 
+    - 2016-04-25 03:56:02.000000000 Z
+    - 2016-04-25 03:56:02.000000000 Z
+    - 
+    - 2
+    - test-04.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1
+  - - 5
+    - inside fears
+    - 
+    - 2016-04-25 03:56:07.000000000 Z
+    - 2016-04-25 03:56:07.000000000 Z
+    - 
+    - 2
+    - test-05.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1
+  - - 6
+    - Great work 1
+    - 
+    - 2016-04-25 03:56:11.000000000 Z
+    - 2016-04-25 03:56:11.000000000 Z
+    - 
+    - 4
+    - 10test-09.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 7
+    - Great work 2
+    - ''
+    - 2016-04-25 03:56:16.000000000 Z
+    - 2016-04-25 21:05:07.000000000 Z
+    - ''
+    - 4
+    - test-08.jpg
+    - 1
+    - true
+    - true
+    - 
+    - 1
+  - - 8
+    - Great work 3
+    - 
+    - 2016-04-25 03:56:20.000000000 Z
+    - 2016-04-25 03:56:20.000000000 Z
+    - 
+    - 4
+    - test-14.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 9
+    - Great work 4
+    - 
+    - 2016-04-25 03:56:25.000000000 Z
+    - 2016-04-25 03:56:25.000000000 Z
+    - 
+    - 4
+    - test-13.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 3
+  - - 10
+    - the road to Xinhoa
+    - 
+    - 2016-04-25 03:56:29.000000000 Z
+    - 2016-04-25 03:56:29.000000000 Z
+    - 
+    - 3
+    - test-06.jpg
+    - 1
+    - false
+    - false
+    - 
+    - 1
+  - - 11
+    - move
+    - quick sketch
+    - 2016-04-25 15:05:48.000000000 Z
+    - 2016-04-25 15:06:30.000000000 Z
+    - 
+    - 1
+    - 0_big__1_.jpg
+    - 1
+    - false
+    - true
+    - 
+    - 3
+  - - 12
+    - meaningfull task
+    - illustration about important tasks in life
+    - 2016-04-25 15:07:53.000000000 Z
+    - 2016-04-25 15:09:32.000000000 Z
+    - 
+    - 1
+    - 11046564_863597820379202_3732468617271037230_n.jpg
+    - 1
+    - false
+    - true
+    - 
+    - 2
